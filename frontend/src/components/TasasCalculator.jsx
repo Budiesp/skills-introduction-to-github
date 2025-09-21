@@ -111,7 +111,7 @@ const TasasCalculator = ({ isOpen, onClose }) => {
           <div className="border-t pt-8">
             <h3 className="text-xl font-semibold text-slate-900 mb-6">Calculadora</h3>
             
-            <div className="grid md:grid-cols-4 gap-4 mb-6">
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Tipo de procedimiento *
@@ -143,20 +143,6 @@ const TasasCalculator = ({ isOpen, onClose }) => {
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Facturación anual (si es PJ)
-                </label>
-                <input
-                  type="text"
-                  value={facturacionAnual}
-                  onChange={(e) => setFacturacionAnual(e.target.value)}
-                  placeholder="Ej: 500.000 €"
-                  disabled={!isPersonaJuridica}
-                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 disabled:bg-slate-100"
-                />
-              </div>
-
               <div className="flex items-center space-x-3 pt-6">
                 <input
                   type="checkbox"
@@ -165,7 +151,7 @@ const TasasCalculator = ({ isOpen, onClose }) => {
                   onChange={(e) => {
                     setIsPersonaJuridica(e.target.checked);
                     if (!e.target.checked) {
-                      setFacturacionAnual('');
+                      setFacturaMasDeUnMillon('');
                     }
                   }}
                   className="h-4 w-4 text-slate-600"
@@ -175,6 +161,45 @@ const TasasCalculator = ({ isOpen, onClose }) => {
                 </label>
               </div>
             </div>
+
+            {/* Pregunta adicional para personas jurídicas */}
+            {isPersonaJuridica && (
+              <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <label className="block text-sm font-medium text-slate-700 mb-3">
+                  ¿La empresa factura más de 1.000.000 € anuales? *
+                </label>
+                <div className="flex space-x-6">
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      id="factura-si"
+                      name="facturaMillon"
+                      value="si"
+                      checked={facturaMasDeUnMillon === 'si'}
+                      onChange={(e) => setFacturaMasDeUnMillon(e.target.value)}
+                      className="h-4 w-4 text-slate-600"
+                    />
+                    <label htmlFor="factura-si" className="ml-2 text-sm font-medium text-slate-700">
+                      Sí
+                    </label>
+                  </div>
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      id="factura-no"
+                      name="facturaMillon"
+                      value="no"
+                      checked={facturaMasDeUnMillon === 'no'}
+                      onChange={(e) => setFacturaMasDeUnMillon(e.target.value)}
+                      className="h-4 w-4 text-slate-600"
+                    />
+                    <label htmlFor="factura-no" className="ml-2 text-sm font-medium text-slate-700">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className="flex gap-3 mb-6">
               <Button onClick={calculateTasas} className="bg-slate-800 hover:bg-slate-900">
