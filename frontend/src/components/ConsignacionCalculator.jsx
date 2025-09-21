@@ -17,44 +17,61 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
 
   const consignacionInfo = mockData.services[1].detailedInfo;
 
-  // Generar código de juzgado basado en selecciones
+  // Generar código de juzgado basado en selecciones - CÓDIGOS OFICIALES
   const generateCodigoJuzgado = () => {
-    // Usar códigos reales del sistema judicial español
-    const codigosJuzgados = {
+    // Códigos oficiales según tabla de consignaciones España
+    const codigosOficiales = {
       "Barcelona": {
         "Barcelona": {
-          "Primera Instancia": (num) => `053${num.padStart(1, '0')}`,
-          "Instrucción": (num) => `054${num.padStart(1, '0')}`,
-          "Social": (num) => `055${num.padStart(1, '0')}`,
-          "Contencioso-Administrativo": (num) => `056${num.padStart(1, '0')}`,
-          "Penal": (num) => `067${num.padStart(1, '0')}`,
-          "Vigilancia Penitenciaria": (num) => `058${num.padStart(1, '0')}`,
-          "Mercantil": (num) => `059${num.padStart(1, '0')}`
+          "Primera Instancia": {
+            "1": "0534", "2": "0535", "3": "0536", "4": "0537", "5": "0538",
+            "6": "0539", "7": "0540", "8": "0541", "9": "0542", "10": "0543"
+          },
+          "Instrucción": {
+            "1": "0544", "2": "0545", "3": "0546", "4": "0547", "5": "0548",
+            "6": "0549", "7": "0550", "8": "0551", "9": "0552", "10": "0553"
+          },
+          "Penal": {
+            "1": "0658", "2": "0659", "3": "0660", "4": "0661", "5": "0662",
+            "6": "0663", "7": "0664", "8": "0665", "9": "0666", "10": "0667",
+            "11": "0668", "12": "0669", "13": "0670", "14": "0671", "15": "0672",
+            "16": "0673", "17": "0674", "18": "0675", "19": "0676", "20": "0677",
+            "21": "0678", "22": "0679", "23": "0680", "24": "0681", "25": "0682"
+          },
+          "Social": {
+            "1": "0554", "2": "0555", "3": "0556", "4": "0557", "5": "0558",
+            "6": "0559", "7": "0560", "8": "0561", "9": "0562", "10": "0563"
+          },
+          "Mercantil": {
+            "1": "0683", "2": "0684", "3": "0685", "4": "0686", "5": "0687"
+          },
+          "Contencioso-Administrativo": {
+            "1": "0564", "2": "0565", "3": "0566", "4": "0567", "5": "0568"
+          }
         }
       },
       "Madrid": {
         "Madrid": {
-          "Primera Instancia": (num) => `280${num.padStart(2, '0')}`,
-          "Instrucción": (num) => `281${num.padStart(2, '0')}`,
-          "Social": (num) => `282${num.padStart(2, '0')}`,
-          "Contencioso-Administrativo": (num) => `283${num.padStart(2, '0')}`,
-          "Penal": (num) => `284${num.padStart(2, '0')}`,
-          "Vigilancia Penitenciaria": (num) => `285${num.padStart(2, '0')}`,
-          "Mercantil": (num) => `286${num.padStart(2, '0')}`
+          "Primera Instancia": {
+            "1": "2801", "2": "2802", "3": "2803", "4": "2804", "5": "2805"
+          },
+          "Penal": {
+            "1": "2851", "2": "2852", "3": "2853", "4": "2854", "5": "2855"
+          }
         }
       }
     };
     
-    const provinciaData = codigosJuzgados[provincia];
+    const provinciaData = codigosOficiales[provincia];
     if (!provinciaData) return "0000";
     
     const poblacionData = provinciaData[poblacion];
     if (!poblacionData) return "0000";
     
-    const tipoJuzgadoFunc = poblacionData[tipoJuzgado];
-    if (!tipoJuzgadoFunc) return "0000";
+    const tipoJuzgadoData = poblacionData[tipoJuzgado];
+    if (!tipoJuzgadoData) return "0000";
     
-    return tipoJuzgadoFunc(numeroJuzgado);
+    return tipoJuzgadoData[numeroJuzgado] || "0000";
   };
 
   const calculateCuentaConsignacion = () => {
