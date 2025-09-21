@@ -128,6 +128,92 @@ export const mockData = {
             "Barakaldo": {
               "Juzgado de Primera Instancia": {
                 "1": "4680", "2": "4686", "3": "4683", "4": "4690", "5": "4795", "6": "3532"
+              },
+              "Juzgado de Instrucción": {
+                "1": "4681", "2": "4682", "3": "4687", "4": "4691"
+              },
+              "Juzgado de lo Penal": {
+                "1": "4807", "2": "4808"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "3": "4144"
+              }
+            },
+            "Bilbao": {
+              "Audiencia Provincial": {
+                "1": "4701", "2": "4702", "3": "4703", "4": "4704", "5": "4738", "6": "4822"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "4705", "2": "4706", "3": "4707", "4": "4708", "5": "4709", "6": "4710", "7": "4748", "8": "4749", "9": "4750", "10": "4724", "11": "4725", "12": "4726", "13": "4751", "14": "4809", "15": "5374"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "11": "5316"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "4765", "2": "4771", "3": "4759", "4": "4772", "5": "3917", "6": "5105"
+              },
+              "Juzgado de Instrucción": {
+                "1": "4711", "2": "4712", "3": "4713", "4": "4714", "5": "4715", "6": "4716", "7": "4727", "8": "4728", "9": "4729", "10": "4730"
+              },
+              "Juzgado de Menores": {
+                "1": "4731", "2": "1756"
+              },
+              "Juzgado Decano Exclusivo": {
+                "1": "4695"
+              },
+              "Juzgado Ejecutoria Penal": {
+                "7": "4868"
+              },
+              "Juzgado Mercantil": {
+                "1": "2195", "2": "2755"
+              },
+              "Juzgado de lo Penal": {
+                "1": "4732", "2": "4733", "3": "4734", "4": "4735", "5": "4736", "6": "4737"
+              },
+              "Juzgado de lo Social": {
+                "1": "4717", "2": "4718", "3": "4719", "4": "4720", "5": "4721", "6": "4722", "7": "4776", "8": "4778", "9": "4783", "10": "2709", "11": "5356"
+              },
+              "Juzgado de Vigilancia Penitenciaria": {
+                "1": "4788"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "2520", "2": "3623"
+              },
+              "Sección Menores Fiscalía Tribunal Superior Justicia": {
+                "1": "1047"
+              },
+              "Tribunal Superior de Justicia Sala Civil-Penal": {
+                "1": "4696"
+              },
+              "Tribunal Superior de Justicia Sala Contencioso-Administrativo": {
+                "1": "4697"
+              },
+              "Tribunal Superior de Justicia Sala Social": {
+                "1": "4699"
+              }
+            },
+            "Durango": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "4760", "2": "4762", "3": "4688", "4": "4850"
+              },
+              "Servicio Común General": {
+                "1": "5260"
+              }
+            },
+            "Gernika-Lumo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "4768", "2": "4769", "3": "4745", "4": "4863"
+              },
+              "Servicio Común General": {
+                "1": "5261"
+              }
+            },
+            "Getxo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "4766", "2": "4767", "3": "4790", "4": "4791", "5": "4818", "6": "0701"
+              },
+              "Servicio Común General": {
+                "1": "5044"
               }
             }
           },
