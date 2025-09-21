@@ -32,8 +32,10 @@ export const mockData = {
       detailedInfo: {
         estatales: {
           title: "Cálculo de Tasa Estatal",
-          description: "Se devenga siempre que la demanda se interponga por una PERSONA JURÍDICA, y que además el procedimiento supere la cuantía de 2.000 euros.",
-          note: "La STS de 21 de julio de 2016 derogó la vinculación de esta tasa a la cuantía del procedimiento."
+          description: "Se devenga cuando la demanda se interponga por una PERSONA JURÍDICA que facture MÁS DE 1.000.000 € anuales, y que además el procedimiento supere la cuantía de 2.000 euros.",
+          note: "La STS de 21 de julio de 2016 derogó la vinculación de esta tasa a la cuantía del procedimiento.",
+          important: "⚠️ IMPORTANTE: Las empresas que facturen menos de 1.000.000 € anuales NO pagan tasa judicial estatal.",
+          reference: "Referencia legal: Artículo 4 y disposición final primera del Real Decreto-ley 1/2015, que modifican la Ley 10/2012."
         },
         autonomicas: {
           title: "Cálculo de Tasa Autonómica",
