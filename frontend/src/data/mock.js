@@ -215,6 +215,33 @@ export const mockData = {
               "Servicio Común General": {
                 "1": "5044"
               }
+            },
+            "Azpeitia": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1830", "2": "1832"
+              },
+              "Servicio Común General": {
+                "1": "5257"
+              }
+            },
+            "Bergara": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1872", "2": "1873", "3": "1876", "4": "1877"
+              },
+              "Servicio Común General": {
+                "1": "5258"
+              }
+            },
+            "Donostia-San Sebastián": {
+              "Audiencia Provincial": {
+                "1": "1844", "2": "1858", "3": "1895"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1845", "2": "1846", "3": "1847", "4": "1855", "5": "1833", "6": "1892", "7": "0699", "8": "2812"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1885", "2": "1886", "3": "3834"
+              }
             }
           },
           "Castilla-La Mancha": {
