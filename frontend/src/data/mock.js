@@ -17,9 +17,9 @@ export const mockData = {
   },
   
   hero: {
-    title: "Gestión procesal profesional",
+    title: "Atención integral y personalizada para letrados",
     subtitle: "Despacho de procuradores en Barcelona y Madrid",
-    description: "Atención integral y personalizada para letrados. Tecnología avanzada y trato cercano para optimizar la gestión de sus asuntos judiciales.",
+    description: "Tecnología avanzada y trato cercano para optimizar la gestión de sus asuntos judiciales.",
     ctaText: "Solicitar información"
   },
 
