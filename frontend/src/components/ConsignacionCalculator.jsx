@@ -19,24 +19,42 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
 
   // Generar código de juzgado basado en selecciones
   const generateCodigoJuzgado = () => {
-    const provinciasCodigos = {
-      "Barcelona": "05",
-      "Madrid": "28",
-      "Valencia": "46", 
-      "Sevilla": "41",
-      "Málaga": "29",
-      "Bilbao": "48",
-      "Alicante": "03",
-      "Córdoba": "14",
-      "Valladolid": "47",
-      "Granada": "18"
+    // Usar códigos reales del sistema judicial español
+    const codigosJuzgados = {
+      "Barcelona": {
+        "Barcelona": {
+          "Primera Instancia": (num) => `053${num.padStart(1, '0')}`,
+          "Instrucción": (num) => `054${num.padStart(1, '0')}`,
+          "Social": (num) => `055${num.padStart(1, '0')}`,
+          "Contencioso-Administrativo": (num) => `056${num.padStart(1, '0')}`,
+          "Penal": (num) => `067${num.padStart(1, '0')}`,
+          "Vigilancia Penitenciaria": (num) => `058${num.padStart(1, '0')}`,
+          "Mercantil": (num) => `059${num.padStart(1, '0')}`
+        }
+      },
+      "Madrid": {
+        "Madrid": {
+          "Primera Instancia": (num) => `280${num.padStart(2, '0')}`,
+          "Instrucción": (num) => `281${num.padStart(2, '0')}`,
+          "Social": (num) => `282${num.padStart(2, '0')}`,
+          "Contencioso-Administrativo": (num) => `283${num.padStart(2, '0')}`,
+          "Penal": (num) => `284${num.padStart(2, '0')}`,
+          "Vigilancia Penitenciaria": (num) => `285${num.padStart(2, '0')}`,
+          "Mercantil": (num) => `286${num.padStart(2, '0')}`
+        }
+      }
     };
     
-    const tipoJuzgadoCodigo = consignacionInfo.tiposJuzgado.find(t => t.tipo === tipoJuzgado)?.codigo || "05";
-    const provCodigo = provinciasCodigos[provincia] || "08";
-    const numJuzgado = numeroJuzgado.padStart(2, '0');
+    const provinciaData = codigosJuzgados[provincia];
+    if (!provinciaData) return "0000";
     
-    return `${provCodigo}${tipoJuzgadoCodigo.slice(-1)}${numJuzgado}`;
+    const poblacionData = provinciaData[poblacion];
+    if (!poblacionData) return "0000";
+    
+    const tipoJuzgadoFunc = poblacionData[tipoJuzgado];
+    if (!tipoJuzgadoFunc) return "0000";
+    
+    return tipoJuzgadoFunc(numeroJuzgado);
   };
 
   const calculateCuentaConsignacion = () => {
