@@ -112,7 +112,7 @@ const TasasCalculator = ({ isOpen, onClose }) => {
           <div className="border-t pt-8">
             <h3 className="text-xl font-semibold text-slate-900 mb-6">Calculadora</h3>
             
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
+            <div className="grid md:grid-cols-4 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Tipo de procedimiento *
@@ -144,12 +144,31 @@ const TasasCalculator = ({ isOpen, onClose }) => {
                 />
               </div>
 
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Facturación anual (si es PJ)
+                </label>
+                <input
+                  type="text"
+                  value={facturacionAnual}
+                  onChange={(e) => setFacturacionAnual(e.target.value)}
+                  placeholder="Ej: 500.000 €"
+                  disabled={!isPersonaJuridica}
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 disabled:bg-slate-100"
+                />
+              </div>
+
               <div className="flex items-center space-x-3 pt-6">
                 <input
                   type="checkbox"
                   id="personaJuridica"
                   checked={isPersonaJuridica}
-                  onChange={(e) => setIsPersonaJuridica(e.target.checked)}
+                  onChange={(e) => {
+                    setIsPersonaJuridica(e.target.checked);
+                    if (!e.target.checked) {
+                      setFacturacionAnual('');
+                    }
+                  }}
                   className="h-4 w-4 text-slate-600"
                 />
                 <label htmlFor="personaJuridica" className="text-sm font-medium text-slate-700">
