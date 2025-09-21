@@ -79,8 +79,65 @@ export const mockData = {
           completo: "0679.0000.04.0232.13",
           descripcion: "Procedimiento Ordinario en el Juzgado de lo Penal 22 de Barcelona con número de autos 232/13"
         },
-        // Códigos de juzgados organizados por comunidad → población → tipo → número
+        // Códigos de juzgados organizados por comunidad → población → tipo → número - DATOS REALES
         codigosJuzgados: {
+          "País Vasco": {
+            "Amurrio": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0001", "2": "0003"
+              },
+              "Servicio Común General": {
+                "1": "5259"
+              }
+            },
+            "Vitoria-Gasteiz": {
+              "Audiencia Provincial": {
+                "1": "0008", "2": "0071"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "0009", "2": "0010", "3": "0011", "4": "0012", "5": "0004", 
+                "6": "0072", "7": "0844", "8": "4300"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0026", "2": "0074", "3": "3837"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0013", "2": "0014", "3": "0015", "4": "0016"
+              },
+              "Juzgado de Menores": {
+                "1": "0022"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0023", "2": "0024"
+              },
+              "Juzgado de lo Social": {
+                "1": "0017", "2": "0018", "3": "0078", "4": "4886"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "2495"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "0434"
+              },
+              "Servicio Común General": {
+                "1": "0079"
+              }
+            }
+          },
+          "Castilla-La Mancha": {
+            "Albacete": {
+              "Audiencia Provincial": {
+                "1": "0031", "2": "0042"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "0032", "2": "0033", "3": "0041", "4": "0040", "5": "0884", 
+                "6": "3220", "7": "5045", "8": "5343"
+              },
+              "Juzgado de Primera Instancia": {
+                "3": "5300" // Juzgado 1 Instancia 3 BIS
+              }
+            }
+          },
           "Cataluña": {
             "Barcelona": {
               "Juzgado de lo Penal": {
