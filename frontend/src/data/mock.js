@@ -79,12 +79,13 @@ export const mockData = {
           completo: "0679.0000.04.0232.13",
           descripcion: "Procedimiento Ordinario en el Juzgado de lo Penal 22 de Barcelona con número de autos 232/13"
         },
-        // Códigos de juzgados organizados por comunidad → población → tipo → número - DATOS REALES
+        // Códigos de juzgados organizados por comunidad → población → tipo → número - DATOS REALES OFICIALES
         codigosJuzgados: {
           "País Vasco": {
             "Amurrio": {
               "Juzgado de Primera Instancia e Instrucción": {
-                "1": "0001", "2": "0003"
+                "1": "0001",
+                "2": "0003"
               },
               "Servicio Común General": {
                 "1": "5259"
@@ -92,11 +93,12 @@ export const mockData = {
             },
             "Vitoria-Gasteiz": {
               "Audiencia Provincial": {
-                "1": "0008", "2": "0071"
+                "1": "0008",
+                "2": "0071"
               },
               "Juzgado de Primera Instancia": {
-                "1": "0009", "2": "0010", "3": "0011", "4": "0012", "5": "0004", 
-                "6": "0072", "7": "0844", "8": "4300"
+                "1": "0009", "2": "0010", "3": "0011", "4": "0012", 
+                "5": "0004", "6": "0072", "7": "0844", "8": "4300"
               },
               "Juzgado Contencioso Administrativo": {
                 "1": "0026", "2": "0074", "3": "3837"
@@ -124,25 +126,12 @@ export const mockData = {
               }
             }
           },
-          "Castilla-La Mancha": {
-            "Albacete": {
-              "Audiencia Provincial": {
-                "1": "0031", "2": "0042"
-              },
-              "Juzgado de Primera Instancia": {
-                "1": "0032", "2": "0033", "3": "0041", "4": "0040", "5": "0884", 
-                "6": "3220", "7": "5045", "8": "5343"
-              },
-              "Juzgado de Primera Instancia": {
-                "3": "5300" // Juzgado 1 Instancia 3 BIS
-              }
-            }
-          },
           "Cataluña": {
             "Barcelona": {
               "Juzgado de lo Penal": {
-                "2": "0576", "3": "0577", "19": "0676", "20": "0677", "22": "0679", 
-                "23": "0955", "25": "4604", "26": "4786", "27": "4685", "28": "5074"
+                "2": "0576", "3": "0577", "19": "0676", "20": "0677", 
+                "22": "0679", "23": "0955", "25": "4604", "26": "4786", 
+                "27": "4685", "28": "5074"
               }
             }
           },
