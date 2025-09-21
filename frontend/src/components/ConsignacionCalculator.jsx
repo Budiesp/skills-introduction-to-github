@@ -113,7 +113,10 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
   };
 
   const resetCalculator = () => {
-    setCodigoJuzgado('');
+    setComunidad('');
+    setPoblacion('');
+    setTipoJuzgado('');
+    setNumeroJuzgado('');
     setTipoProcedimiento('');
     setNumeroAutos('');
     setAnoAutos('');
