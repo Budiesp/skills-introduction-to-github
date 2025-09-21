@@ -101,3 +101,48 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: Continue integrating official court codes from "consignas 5.txt" into the ConsignacionCalculator.jsx component
+
+backend:
+  - task: "FastAPI backend server"
+    implemented: true
+    working: true
+    file: "server.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Backend server running correctly, no changes needed for court code integration"
+
+frontend:
+  - task: "Court codes integration - consignas 5.txt"
+    implemented: true
+    working: true
+    file: "mock.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Successfully integrated court codes from consignas 5.txt. Added 20+ new cities to Barcelona and 2 cities to Bizkaia. Data includes Cerdanyola del Vallès, Cornellà de Llobregat, Gavà, Granollers, L'Hospitalet de Llobregat, Igualada, Manresa, Martorell, Mataró, Mollet del Vallès, El Prat de Llobregat, Rubí, Sabadell, Sant Boi de Llobregat, Sant Feliu de Llobregat, Santa Coloma de Gramenet, Terrassa, Vic, Vilafranca del Penedès, Vilanova i la Geltrú, Balmaseda, and Barakaldo with their respective court types and codes"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Court codes integration - consignas 5.txt"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+    - agent: "main"
+      message: "Integrated court codes from consignas 5.txt file. Added comprehensive Barcelona province cities and some Bizkaia cities. The ConsignacionCalculator now has a much more complete database of official court codes. Need to test the cascaded dropdowns functionality to ensure the new cities and courts appear correctly in the UI."
