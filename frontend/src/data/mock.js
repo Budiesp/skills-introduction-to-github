@@ -79,6 +79,30 @@ export const mockData = {
           completo: "0534.0000.04.0232.13",
           descripcion: "Procedimiento Ordinario en el Juzgado de Primera Instancia 1 de Barcelona con número de autos 232/13"
         },
+        provincias: [
+          "Barcelona", "Madrid", "Valencia", "Sevilla", "Málaga", "Bilbao", "Alicante", "Córdoba", "Valladolid", "Granada"
+        ],
+        poblaciones: {
+          "Barcelona": ["Barcelona", "Hospitalet", "Cornellá del Llobregat", "Sant Feliu de Llobregat", "Esplugues del Llobregat"],
+          "Madrid": ["Madrid"],
+          "Valencia": ["Valencia"],
+          "Sevilla": ["Sevilla"],
+          "Málaga": ["Málaga"],
+          "Bilbao": ["Bilbao"],
+          "Alicante": ["Alicante"],
+          "Córdoba": ["Córdoba"],
+          "Valladolid": ["Valladolid"],
+          "Granada": ["Granada"]
+        },
+        tiposJuzgado: [
+          { tipo: "Primera Instancia", codigo: "05" },
+          { tipo: "Instrucción", codigo: "06" },
+          { tipo: "Social", codigo: "07" },
+          { tipo: "Contencioso-Administrativo", codigo: "08" },
+          { tipo: "Penal", codigo: "09" },
+          { tipo: "Vigilancia Penitenciaria", codigo: "10" },
+          { tipo: "Mercantil", codigo: "11" }
+        ],
         codigosProcedimientos: [
           { codigo: "01", nombre: "Monitorio" },
           { codigo: "02", nombre: "Verbal" },
