@@ -121,7 +121,7 @@ backend:
           comment: "Comprehensive backend testing completed successfully. All 5 core tests passed: Health check endpoint (/api/) working correctly, Database connectivity verified with MongoDB, CRUD operations (POST/GET /api/status) functioning properly, Error handling working with appropriate HTTP status codes, CORS configuration present. Created backend_test.py for future testing. Backend is stable and ready to support frontend ConsignacionCalculator functionality. Tested with realistic legal services data including multiple Spanish law firms."
 
 frontend:
-  - task: "Court codes integration - consignas 5.txt"
+  - task: "Court codes integration - consignas 6.txt"
     implemented: true
     working: true
     file: "mock.js"
@@ -131,7 +131,7 @@ frontend:
     status_history:
         - working: true
           agent: "main"
-          comment: "Successfully integrated court codes from consignas 5.txt. Added 20+ new cities to Barcelona and 2 cities to Bizkaia. Data includes Cerdanyola del Vallès, Cornellà de Llobregat, Gavà, Granollers, L'Hospitalet de Llobregat, Igualada, Manresa, Martorell, Mataró, Mollet del Vallès, El Prat de Llobregat, Rubí, Sabadell, Sant Boi de Llobregat, Sant Feliu de Llobregat, Santa Coloma de Gramenet, Terrassa, Vic, Vilafranca del Penedès, Vilanova i la Geltrú, Balmaseda, and Barakaldo with their respective court types and codes"
+          comment: "Successfully integrated court codes from consignas 6.txt. Added 3 NEW PROVINCES: Burgos (7 cities), Cáceres (7 cities), Cádiz (4 cities). Expanded Bizkaia with comprehensive Bilbao data and added Durango, Gernika-Lumo, Getxo. Updated Barakaldo with complete court hierarchy. Total new regions: 18+ cities with full court structures including Audiencia Provincial, Primera Instancia, Instrucción, Penal, Social, Mercantil, Menores, etc."
 
 metadata:
   created_by: "main_agent"
