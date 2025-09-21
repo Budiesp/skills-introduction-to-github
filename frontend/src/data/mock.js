@@ -241,6 +241,60 @@ export const mockData = {
               },
               "Juzgado Contencioso Administrativo": {
                 "1": "1885", "2": "1886", "3": "3834"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1848", "2": "1849", "3": "1850", "4": "1856", "5": "1857"
+              },
+              "Juzgado de Menores": {
+                "1": "1889"
+              },
+              "Juzgado Ejecutoria Penal": {
+                "4": "1948"
+              },
+              "Juzgado Mercantil": {
+                "1": "2196"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1859", "2": "1860", "3": "1861", "5": "1893"
+              },
+              "Juzgado de lo Social": {
+                "1": "1851", "2": "1852", "3": "1853", "4": "1854", "5": "5078"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "2314"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "1045"
+              },
+              "Servicio Común General": {
+                "1": "5315"
+              }
+            },
+            "Eibar": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1836", "2": "1837"
+              },
+              "Juzgado de lo Social": {
+                "1": "1843"
+              },
+              "Servicio Común General": {
+                "1": "4142"
+              }
+            },
+            "Irun": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1870", "2": "1871", "3": "1890", "4": "1959", "5": "4231"
+              },
+              "Servicio Común General": {
+                "1": "5043"
+              }
+            },
+            "Tolosa": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1864", "2": "1865", "3": "1868", "4": "5075"
+              },
+              "Servicio Común General": {
+                "1": "1949"
               }
             }
           },
