@@ -752,7 +752,96 @@ export const mockData = {
                 "1": "2235"
               },
               "Juzgado de lo Penal": {
-                "1": "1239", "2": "1240", "3": "1241", "4": "1588"
+                "1": "1239", "2": "1240", "3": "1241", "4": "1588", "5": "2735"
+              },
+              "Juzgado de lo Social": {
+                "1": "1233", "2": "1234", "3": "1282"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "4349"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "1138"
+              }
+            },
+            "Chiclana de la Frontera": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1245", "2": "1247", "3": "1244", "4": "1881", "5": "4972"
+              }
+            },
+            "El Puerto de Santa María": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1272", "2": "1273", "3": "1276", "4": "1305", "5": "3563"
+              }
+            },
+            "Jerez de la Frontera": {
+              "Audiencia Provincial": {
+                "8": "1465"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1259", "2": "1250", "3": "1242", "4": "1257", "5": "1258", "6": "4968", "7": "5401"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0128"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1249", "2": "2070", "3": "1251", "4": "3292", "5": "4787"
+              },
+              "Juzgado de Menores": {
+                "3": "2723"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1260", "2": "1261", "3": "1295"
+              },
+              "Juzgado de lo Social": {
+                "1": "1255", "2": "1256", "3": "4427"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "4062"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "3079"
+              }
+            },
+            "La Línea de la Concepción": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1266", "2": "1265", "3": "1267", "4": "4980"
+              }
+            },
+            "Puerto Real": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1279", "2": "1302"
+              }
+            },
+            "Rota": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1281", "2": "1269"
+              },
+              "Juzgado Decano": {
+                "1": "8329"
+              }
+            },
+            "San Fernando": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1283", "2": "1284", "3": "1287"
+              },
+              "Juzgado Togado Militar Territorial": {
+                "22": "2035"
+              }
+            },
+            "San Roque": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1297", "2": "1298"
+              }
+            },
+            "Sanlúcar de Barrameda": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1292", "2": "1291", "3": "1294", "4": "2321"
+              }
+            },
+            "Ubrique": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1306"
               }
             }
           },
