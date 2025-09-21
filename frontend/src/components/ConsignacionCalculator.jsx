@@ -119,20 +119,20 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
           <div className="border-t pt-8">
             <h3 className="text-xl font-semibold text-slate-900 mb-6">Calculadora</h3>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Código de Juzgado *
+                  Código del Juzgado *
                 </label>
                 <input
                   type="text"
                   value={codigoJuzgado}
                   onChange={(e) => setCodigoJuzgado(e.target.value)}
-                  placeholder="Ej: 0534"
+                  placeholder="Ej: 0679"
                   maxLength="4"
                   className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                 />
-                <div className="text-xs text-slate-500 mt-1">Código oficial del juzgado (4 dígitos)</div>
+                <div className="text-xs text-slate-500 mt-1">Código de 4 dígitos del juzgado</div>
               </div>
 
               <div>
@@ -144,7 +144,7 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
                   onChange={(e) => setTipoProcedimiento(e.target.value)}
                   className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                 >
-                  <option value="">Seleccionar</option>
+                  <option value="">Seleccionar procedimiento</option>
                   {consignacionInfo.codigosProcedimientos.map((proc) => (
                     <option key={proc.codigo} value={proc.codigo}>
                       {proc.codigo} - {proc.nombre}
@@ -166,9 +166,7 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
                 />
                 <div className="text-xs text-slate-500 mt-1">Número del procedimiento</div>
               </div>
-            </div>
 
-            <div className="grid md:grid-cols-1 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Año *
