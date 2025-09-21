@@ -1748,6 +1748,278 @@ export const mockData = {
                 "1": "1030", "2": "1821", "3": "3049", "4": "5139"
               }
             }
+          },
+          "Girona": {
+            "La Bisbal d'Empordà": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1650", "2": "1652", "3": "1654", "4": "1702"
+              }
+            },
+            "Blanes": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1657", "2": "1703", "3": "1704", "4": "1709", "5": "1646", "6": "5108"
+              },
+              "Servicio Común General": {
+                "1": "5323"
+              }
+            },
+            "Figueres": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1659", "2": "1660", "3": "1661", "4": "1655", "5": "1656", "6": "1658", "7": "0856", "8": "4172"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0077", "2": "1966"
+              },
+              "Juzgado de lo Social": {
+                "1": "0399"
+              }
+            },
+            "Girona": {
+              "Audiencia Provincial": {
+                "1": "1663", "2": "1647", "3": "1786", "4": "2718"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1664", "2": "1674", "3": "1680", "4": "1672", "5": "1673", "6": "4995"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1685", "2": "1689", "3": "3912"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1484", "2": "1665", "3": "1666", "4": "1679"
+              },
+              "Juzgado de Menores": {
+                "1": "1675"
+              },
+              "Juzgado Mercantil": {
+                "1": "2249"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1676", "2": "1677", "3": "1678", "4": "1667", "5": "2747", "6": "5148"
+              },
+              "Juzgado de lo Social": {
+                "1": "1670", "2": "1671", "3": "1691"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3790"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "1117"
+              },
+              "Servicio Común General": {
+                "1": "1999"
+              }
+            },
+            "Olot": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1682", "2": "1684"
+              },
+              "Servicio Común General": {
+                "1": "5247"
+              }
+            },
+            "Puigcerdà": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1686"
+              }
+            },
+            "Ripoll": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1690"
+              }
+            },
+            "Sant Feliu de Guíxols": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1692", "2": "1706", "3": "1707"
+              },
+              "Juzgado Decano": {
+                "1": "8326"
+              }
+            },
+            "Santa Coloma de Farners": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1694", "2": "1695", "3": "1698", "4": "3676"
+              }
+            }
+          },
+          "Granada": {
+            "Almuñécar": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1780", "2": "1784"
+              }
+            },
+            "Baza": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1716", "2": "1718"
+              }
+            },
+            "Granada": {
+              "Audiencia Provincial": {
+                "1": "1721", "2": "1746", "3": "1747", "4": "1748", "5": "3293"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1722", "2": "1723", "3": "1724", "4": "1725", "5": "1737", "6": "1738", "7": "1739", "8": "1740", "9": "1757", "10": "1713", "11": "1761", "12": "1765", "13": "1053", "14": "5115", "15": "2726", "16": "3572", "17": "4956", "18": "4827"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "9": "5289"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1715", "2": "1719", "3": "1812", "4": "3864", "5": "4376"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1726", "2": "1727", "3": "1728", "4": "1729", "5": "1741", "6": "1742", "7": "1743", "8": "1744", "9": "2742"
+              },
+              "Juzgado de Menores": {
+                "1": "1745", "2": "2748"
+              },
+              "Juzgado Mercantil": {
+                "1": "2216"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1730", "2": "1731", "3": "1750", "4": "1751", "5": "1760", "6": "1116"
+              },
+              "Juzgado de lo Social": {
+                "1": "1732", "2": "1733", "3": "1734", "4": "1735", "5": "1736", "6": "1773", "7": "1642"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "2392", "2": "3452"
+              },
+              "Sección Menores Fiscalía Tribunal Superior Justicia": {
+                "1": "0052"
+              },
+              "Tribunal Superior de Justicia Sala Civil-Penal": {
+                "1": "1788"
+              },
+              "Tribunal Superior de Justicia Sala Contencioso-Administrativo": {
+                "1": "1749", "2": "1759", "3": "2069"
+              },
+              "Tribunal Superior de Justicia Sala Social": {
+                "1": "1758"
+              },
+              "Tribunal Superior de Justicia Secretaría Gobierno": {
+                "1": "1720"
+              }
+            },
+            "Guadix": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1762", "2": "1764"
+              }
+            },
+            "Huéscar": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1766"
+              }
+            },
+            "Loja": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1770", "2": "1772"
+              }
+            },
+            "Motril": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1774", "2": "1775", "3": "1778", "4": "1754", "5": "1755"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0395", "2": "5185"
+              },
+              "Juzgado de lo Social": {
+                "1": "0396"
+              }
+            },
+            "Órgiva": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1781", "2": "1783"
+              }
+            },
+            "Santa Fe": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1787", "2": "1790", "3": "3789", "4": "5375"
+              }
+            }
+          },
+          "Guadalajara": {
+            "Guadalajara": {
+              "Audiencia Provincial": {
+                "1": "1807"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1803", "2": "1806", "3": "1820", "4": "1699", "5": "3291", "6": "4990", "7": "5041"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0367"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1802", "2": "1826", "3": "3239", "4": "4289"
+              },
+              "Juzgado de Menores": {
+                "1": "1819"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1818", "2": "5352"
+              },
+              "Juzgado de lo Social": {
+                "1": "1808", "2": "2178"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "0354"
+              }
+            },
+            "Molina de Aragón": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1810"
+              }
+            },
+            "Sigüenza": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1815"
+              }
+            }
+          },
+          "Huelva": {
+            "Aracena": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1900", "2": "1902"
+              }
+            },
+            "Ayamonte": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1904", "2": "1906", "3": "1907", "4": "3058", "5": "5179"
+              }
+            },
+            "Huelva": {
+              "Audiencia Provincial": {
+                "1": "1910", "2": "1944", "3": "1951"
+              },
+              "Fiscalía Diligencias Investigación Audiencia Provincial": {
+                "1": "3701"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1911", "2": "1912", "3": "1913", "4": "0393", "5": "1921", "6": "1922", "7": "4969", "8": "5364"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "6": "5290"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1968", "2": "1120", "3": "4608"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1914", "2": "1923", "3": "1903", "4": "1929", "5": "4975"
+              },
+              "Juzgado de Menores": {
+                "1": "1924"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1926", "2": "1927", "3": "1928", "4": "0394"
+              },
+              "Juzgado de lo Social": {
+                "1": "1919", "2": "1920", "3": "1932"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3863"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "3700"
+              }
+            }
           }
         },
         codigosProcedimientos: [
