@@ -162,20 +162,16 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
                 </label>
                 <select 
                   value={provincia}
-                  onChange={(e) => setProvincia(e.target.value)}
+                  onChange={(e) => {
+                    setProvincia(e.target.value);
+                    setPoblacion(''); // Reset población when province changes
+                  }}
                   className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                 >
                   <option value="">Seleccionar provincia</option>
-                  <option value="Barcelona">Barcelona</option>
-                  <option value="Madrid">Madrid</option>
-                  <option value="Valencia">Valencia</option>
-                  <option value="Sevilla">Sevilla</option>
-                  <option value="Málaga">Málaga</option>
-                  <option value="Bilbao">Bilbao</option>
-                  <option value="Alicante">Alicante</option>
-                  <option value="Córdoba">Córdoba</option>
-                  <option value="Valladolid">Valladolid</option>
-                  <option value="Granada">Granada</option>
+                  {consignacionInfo.provincias.map((prov) => (
+                    <option key={prov} value={prov}>{prov}</option>
+                  ))}
                 </select>
               </div>
 
@@ -183,14 +179,18 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Población *
                 </label>
-                <input
-                  type="text"
+                <select
                   value={poblacion}
                   onChange={(e) => setPoblacion(e.target.value)}
-                  placeholder="Ej: Barcelona"
-                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
-                />
-                <div className="text-xs text-slate-500 mt-1">Población del juzgado</div>
+                  disabled={!provincia}
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 disabled:bg-slate-100"
+                >
+                  <option value="">Seleccionar población</option>
+                  {provincia && consignacionInfo.poblaciones[provincia]?.map((pob) => (
+                    <option key={pob} value={pob}>{pob}</option>
+                  ))}
+                </select>
+                <div className="text-xs text-slate-500 mt-1">Selecciona primero la provincia</div>
               </div>
 
               <div>
@@ -256,7 +256,9 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
                 />
                 <div className="text-xs text-slate-500 mt-1">Número del procedimiento</div>
               </div>
+            </div>
 
+            <div className="grid md:grid-cols-1 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Año *
