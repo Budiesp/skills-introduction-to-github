@@ -5,7 +5,10 @@ import { X, CreditCard, Copy, CheckCircle, Info } from 'lucide-react';
 import { mockData } from '../data/mock';
 
 const ConsignacionCalculator = ({ isOpen, onClose }) => {
-  const [codigoJuzgado, setCodigoJuzgado] = useState('');
+  const [provincia, setProvincia] = useState('');
+  const [poblacion, setPoblacion] = useState('');
+  const [tipoJuzgado, setTipoJuzgado] = useState('');
+  const [numeroJuzgado, setNumeroJuzgado] = useState('');
   const [tipoProcedimiento, setTipoProcedimiento] = useState('');
   const [numeroAutos, setNumeroAutos] = useState('');
   const [anoAutos, setAnoAutos] = useState('');
@@ -14,14 +17,36 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
 
   const consignacionInfo = mockData.services[1].detailedInfo;
 
+  // Generar código de juzgado basado en selecciones
+  const generateCodigoJuzgado = () => {
+    const provinciasCodigos = {
+      "Barcelona": "05",
+      "Madrid": "28",
+      "Valencia": "46", 
+      "Sevilla": "41",
+      "Málaga": "29",
+      "Bilbao": "48",
+      "Alicante": "03",
+      "Córdoba": "14",
+      "Valladolid": "47",
+      "Granada": "18"
+    };
+    
+    const tipoJuzgadoCodigo = consignacionInfo.tiposJuzgado.find(t => t.tipo === tipoJuzgado)?.codigo || "05";
+    const provCodigo = provinciasCodigos[provincia] || "08";
+    const numJuzgado = numeroJuzgado.padStart(2, '0');
+    
+    return `${provCodigo}${tipoJuzgadoCodigo.slice(-1)}${numJuzgado}`;
+  };
+
   const calculateCuentaConsignacion = () => {
-    if (!codigoJuzgado || !tipoProcedimiento || !numeroAutos || !anoAutos) {
+    if (!provincia || !poblacion || !tipoJuzgado || !numeroJuzgado || !tipoProcedimiento || !numeroAutos || !anoAutos) {
       alert('Por favor, complete todos los campos obligatorios');
       return;
     }
 
-    // Formatear código de juzgado (4 dígitos)
-    const codigoFormateado = codigoJuzgado.padStart(4, '0');
+    // Generar código de juzgado automáticamente
+    const codigoJuzgado = generateCodigoJuzgado();
     
     // Ceros fijos
     const cerosFijos = '0000';
@@ -34,20 +59,28 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
     const anoFormateado = anoAutos.slice(-2); // últimas 2 cifras del año
     
     // Construir número de cuenta
-    const numeroCuenta = `${codigoFormateado}.${cerosFijos}.${codigoProcedimiento}.${numeroFormateado}.${anoFormateado}`;
+    const numeroCuenta = `${codigoJuzgado}.${cerosFijos}.${codigoProcedimiento}.${numeroFormateado}.${anoFormateado}`;
     
     const procedimientoSeleccionado = consignacionInfo.codigosProcedimientos.find(
       p => p.codigo === tipoProcedimiento
     );
 
+    const tipoJuzgadoSeleccionado = consignacionInfo.tiposJuzgado.find(
+      t => t.tipo === tipoJuzgado
+    );
+
     setResult({
       numeroCuenta,
-      codigoJuzgado: codigoFormateado,
+      codigoJuzgado,
       cerosFijos,
       codigoProcedimiento,
       numeroAutos: numeroFormateado,
       ano: anoFormateado,
       tipoProcedimientoNombre: procedimientoSeleccionado?.nombre || '',
+      provincia,
+      poblacion,
+      tipoJuzgado: tipoJuzgadoSeleccionado?.tipo || '',
+      numeroJuzgado,
       cuentaBancaria: consignacionInfo.cuentaBancaria
     });
   };
@@ -60,7 +93,10 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
   };
 
   const resetCalculator = () => {
-    setCodigoJuzgado('');
+    setProvincia('');
+    setPoblacion('');
+    setTipoJuzgado('');
+    setNumeroJuzgado('');
     setTipoProcedimiento('');
     setNumeroAutos('');
     setAnoAutos('');
