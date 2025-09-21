@@ -121,7 +121,7 @@ backend:
           comment: "Comprehensive backend testing completed successfully. All 5 core tests passed: Health check endpoint (/api/) working correctly, Database connectivity verified with MongoDB, CRUD operations (POST/GET /api/status) functioning properly, Error handling working with appropriate HTTP status codes, CORS configuration present. Created backend_test.py for future testing. Backend is stable and ready to support frontend ConsignacionCalculator functionality. Tested with realistic legal services data including multiple Spanish law firms."
 
 frontend:
-  - task: "Court codes integration - consignas 8.txt"
+  - task: "Court codes integration - consignas 9.txt"
     implemented: true
     working: true
     file: "mock.js"
@@ -131,7 +131,7 @@ frontend:
     status_history:
         - working: true
           agent: "main"
-          comment: "Successfully integrated all ~200 court codes from consignas 8.txt. EXPANDED Ciudad Real (+2 cities), País Vasco/Gipuzkoa (+3 cities including Donostia-San Sebastián). ADDED 3 MAJOR NEW PROVINCES: Córdoba (13 cities including capital with full structure), A Coruña (14 cities including capital with full TSJ structure), Cuenca (4 cities). Total integration: 32 new/expanded cities across 5 provinces."
+          comment: "MASSIVE INTEGRATION COMPLETE! Successfully integrated all ~278 court codes from consignas 9.txt. EXPANDED País Vasco/Gipuzkoa (completed Donostia-San Sebastián with full structure + 3 new cities: Eibar, Irun, Tolosa). ADDED 4 MAJOR NEW PROVINCES: Girona (8 cities including capital), Granada (8 cities including capital with TSJ), Guadalajara (3 cities), Huelva (3 cities including capital). Total: 22 new cities with comprehensive judicial structures."
 
 metadata:
   created_by: "main_agent"
