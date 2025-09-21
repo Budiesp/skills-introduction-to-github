@@ -155,19 +155,74 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
           <div className="border-t pt-8">
             <h3 className="text-xl font-semibold text-slate-900 mb-6">Calculadora</h3>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Código del Juzgado *
+                  Provincia *
+                </label>
+                <select 
+                  value={provincia}
+                  onChange={(e) => setProvincia(e.target.value)}
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
+                >
+                  <option value="">Seleccionar provincia</option>
+                  <option value="Barcelona">Barcelona</option>
+                  <option value="Madrid">Madrid</option>
+                  <option value="Valencia">Valencia</option>
+                  <option value="Sevilla">Sevilla</option>
+                  <option value="Málaga">Málaga</option>
+                  <option value="Bilbao">Bilbao</option>
+                  <option value="Alicante">Alicante</option>
+                  <option value="Córdoba">Córdoba</option>
+                  <option value="Valladolid">Valladolid</option>
+                  <option value="Granada">Granada</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Población *
                 </label>
                 <input
                   type="text"
-                  value={codigoJuzgado}
-                  onChange={(e) => setCodigoJuzgado(e.target.value)}
-                  placeholder="Ej: 534"
+                  value={poblacion}
+                  onChange={(e) => setPoblacion(e.target.value)}
+                  placeholder="Ej: Barcelona"
                   className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                 />
-                <div className="text-xs text-slate-500 mt-1">4 dígitos del órgano judicial</div>
+                <div className="text-xs text-slate-500 mt-1">Población del juzgado</div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Tipo de Juzgado *
+                </label>
+                <select 
+                  value={tipoJuzgado}
+                  onChange={(e) => setTipoJuzgado(e.target.value)}
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
+                >
+                  <option value="">Seleccionar tipo</option>
+                  {consignacionInfo.tiposJuzgado?.map((tipo) => (
+                    <option key={tipo.codigo} value={tipo.tipo}>
+                      {tipo.tipo}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Número de Juzgado *
+                </label>
+                <input
+                  type="text"
+                  value={numeroJuzgado}
+                  onChange={(e) => setNumeroJuzgado(e.target.value)}
+                  placeholder="Ej: 1"
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
+                />
+                <div className="text-xs text-slate-500 mt-1">Número del juzgado</div>
               </div>
 
               <div>
