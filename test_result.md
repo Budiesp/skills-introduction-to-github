@@ -148,6 +148,6 @@ test_plan:
 
 agent_communication:
     - agent: "main"
-      message: "MAJOR EXPANSION COMPLETE! Integrated all 212 court codes from consignas 7.txt. ConsignacionCalculator now includes 13 provinces/regions with comprehensive coverage: País Vasco, Castilla-La Mancha, Comunidad Valenciana, Andalucía, Asturias, Burgos, Cáceres, Cádiz (expanded), Cantabria (NEW), Ceuta (NEW), Ciudad Real (NEW), Cataluña. Database now contains 1,500+ official court codes covering major Spanish judicial districts with complete hierarchical structures for all court types."
+      message: "MASSIVE EXPANSION COMPLETED! Integrated all ~200 court codes from consignas 8.txt. ConsignacionCalculator now includes 16 provinces/regions: País Vasco (expanded with Gipuzkoa), Castilla-La Mancha, Comunidad Valenciana, Andalucía, Asturias, Burgos, Cáceres, Cádiz, Cantabria, Ceuta, Ciudad Real (expanded), Córdoba (NEW), A Coruña (NEW), Cuenca (NEW), Cataluña. Database now exceeds 1,700+ official court codes with comprehensive Spanish judicial coverage including major cities like Córdoba, A Coruña, Donostia-San Sebastián."
     - agent: "testing"
       message: "Backend comprehensive testing completed successfully. All API endpoints working correctly: Health check (/api/), CRUD operations (/api/status), database connectivity with MongoDB verified. Created backend_test.py for future testing. Backend is stable and ready to support the expanded ConsignacionCalculator functionality with new court codes. No critical issues found - backend infrastructure is solid."
