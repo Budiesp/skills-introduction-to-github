@@ -116,6 +116,19 @@ export const mockData = {
               "Juzgado de Violencia sobre la Mujer": {
                 "1": "2495"
               }
+            },
+            "Balmaseda": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "4780", "2": "3573"
+              },
+              "Servicio Común General": {
+                "1": "5262"
+              }
+            },
+            "Barakaldo": {
+              "Juzgado de Primera Instancia": {
+                "1": "4680", "2": "4686", "3": "4683", "4": "4690", "5": "4795", "6": "3532"
+              }
             }
           },
           "Castilla-La Mancha": {
