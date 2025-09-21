@@ -528,6 +528,234 @@ export const mockData = {
               }
             }
           },
+          "Burgos": {
+            "Aranda de Duero": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1050", "2": "1052"
+              }
+            },
+            "Briviesca": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1056"
+              }
+            },
+            "Burgos": {
+              "Audiencia Provincial": {
+                "1": "1078", "2": "1079", "3": "1080"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1064", "2": "1083", "3": "0855", "4": "4673", "5": "1074", "6": "1075", "7": "3731", "8": "5324"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1088", "2": "3035"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1076", "2": "1065", "3": "1066", "4": "1082"
+              },
+              "Juzgado de Menores": {
+                "1": "1077"
+              },
+              "Juzgado Mercantil": {
+                "1": "1067"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1081", "2": "1086", "3": "2776"
+              },
+              "Juzgado de lo Social": {
+                "1": "1072", "2": "1073", "3": "1717"
+              },
+              "Juzgado Togado Militar Territorial": {
+                "43": "1055"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "4825"
+              },
+              "Sección Menores Fiscalía Tribunal Superior Justicia": {
+                "1": "1489"
+              },
+              "Servicio Común General": {
+                "1": "1110"
+              },
+              "Tribunal Superior de Justicia Sala Civil-Penal": {
+                "1": "1060"
+              },
+              "Tribunal Superior de Justicia Sala Contencioso-Administrativo": {
+                "1": "1061", "2": "1105"
+              },
+              "Tribunal Superior de Justicia Sala Social": {
+                "1": "1062"
+              }
+            },
+            "Lerma": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1089"
+              }
+            },
+            "Miranda de Ebro": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1093", "2": "1095"
+              }
+            },
+            "Salas de los Infantes": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1097"
+              }
+            },
+            "Villarcayo de Merindad de Castilla la Vieja": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1102", "2": "1059"
+              }
+            }
+          },
+          "Cáceres": {
+            "Cáceres": {
+              "Audiencia Provincial": {
+                "1": "1133", "2": "1152"
+              },
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1134", "2": "1135", "3": "1136", "4": "1140", "5": "1141", "6": "1829", "7": "4226"
+              },
+              "Juzgado de Primera Instancia e Instrucción BIS": {
+                "5": "5310"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1187", "2": "2737"
+              },
+              "Juzgado de Menores": {
+                "1": "1147"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1139", "2": "4847"
+              },
+              "Juzgado de lo Social": {
+                "1": "1144", "2": "1143"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "3330"
+              },
+              "Servicio Común General": {
+                "1": "5164"
+              },
+              "Tribunal Superior de Justicia Sala Civil-Penal": {
+                "1": "1154"
+              },
+              "Tribunal Superior de Justicia Sala Contencioso-Administrativo": {
+                "1": "1156"
+              },
+              "Tribunal Superior de Justicia Sala Social": {
+                "1": "1131"
+              }
+            },
+            "Coria": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1149", "2": "1151"
+              }
+            },
+            "Logrosán": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1161"
+              }
+            },
+            "Navalmoral de la Mata": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1165", "2": "1167", "3": "5379"
+              }
+            },
+            "Plasencia": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1169", "2": "1172", "3": "1173", "4": "1175"
+              },
+              "Juzgado Decano": {
+                "1": "1164"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1145"
+              },
+              "Juzgado de lo Social": {
+                "3": "3142"
+              }
+            },
+            "Trujillo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1179", "2": "1181"
+              }
+            },
+            "Valencia de Alcántara": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1183"
+              }
+            }
+          },
+          "Cádiz": {
+            "Algeciras": {
+              "Audiencia Provincial": {
+                "7": "1391"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1200", "2": "1201", "3": "1208", "4": "1213", "5": "5400"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0430", "2": "4983"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1202", "2": "1209", "3": "2094", "4": "2382"
+              },
+              "Juzgado de Menores": {
+                "2": "1114"
+              },
+              "Juzgado Decano": {
+                "1": "8071"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1203", "2": "1211", "3": "1212", "4": "3458"
+              },
+              "Juzgado de lo Social": {
+                "1": "1288", "2": "5404"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3665"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "0891"
+              }
+            },
+            "Arcos de la Frontera": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1215", "2": "1217", "3": "1218"
+              }
+            },
+            "Barbate": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1219", "2": "1598"
+              }
+            },
+            "Cádiz": {
+              "Audiencia Provincial": {
+                "1": "1221", "2": "1222", "3": "1223", "4": "1224", "5": "1280"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1225", "2": "1236", "3": "1227", "4": "1220", "5": "1235"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "2": "5287"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1319", "2": "1263", "3": "1317", "4": "4655"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1237", "2": "1226", "3": "1262", "4": "1232"
+              },
+              "Juzgado de Menores": {
+                "1": "1238"
+              },
+              "Juzgado Mercantil": {
+                "1": "2235"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1239", "2": "1240", "3": "1241", "4": "1588"
+              }
+            }
+          },
           "Cataluña": {
             "Arenys de Mar": {
               "Juzgado de lo Penal": {
