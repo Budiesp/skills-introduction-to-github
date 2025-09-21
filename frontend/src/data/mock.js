@@ -275,6 +275,157 @@ export const mockData = {
               },
               "Juzgado Mercantil": {
                 "1": "2231"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0236", "2": "0237", "3": "0256", "4": "3506", "5": "4383"
+              },
+              "Juzgado de lo Social": {
+                "1": "0231", "2": "0232", "3": "0238", "4": "2926"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3721"
+              },
+              "Juzgado Togado Militar Territorial": {
+                "23": "1887"
+              }
+            },
+            "Berja": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0242", "2": "0243"
+              }
+            },
+            "El Ejido": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0250", "2": "0240", "3": "0275", "4": "0698", "5": "2751", "6": "5357"
+              },
+              "Servicio Común General": {
+                "1": "5358"
+              }
+            },
+            "Huércal-Overa": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0251", "2": "0253", "3": "4357"
+              }
+            },
+            "Purchena": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0255"
+              }
+            },
+            "Roquetas de Mar": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0257", "2": "0258", "3": "0274", "4": "3577", "5": "4340", "6": "5349"
+              }
+            },
+            "Vélez-Rubio": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0259"
+              }
+            },
+            "Vera": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0261", "2": "0263", "3": "3533", "4": "5350"
+              }
+            }
+          },
+          "Asturias": {
+            "Avilés": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3262", "2": "3263", "3": "3268", "4": "3266", "5": "3267", "6": "2813", "7": "4286"
+              },
+              "Juzgado de lo Penal": {
+                "1": "3318", "2": "4755"
+              },
+              "Juzgado de lo Social": {
+                "1": "3269", "2": "3320"
+              }
+            },
+            "Cangas del Narcea": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3274"
+              }
+            },
+            "Cangas de Onís": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3278"
+              }
+            },
+            "Castropol": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3282"
+              }
+            },
+            "Gijón": {
+              "Audiencia Provincial Sede Desplazada": {
+                "7": "3380", "8": "0923"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "3284", "2": "3285", "3": "3286", "4": "3287", "5": "3297", 
+                "6": "3298", "7": "3314", "8": "2105", "9": "3275", "10": "3209", 
+                "11": "3675", "12": "5411"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0021"
+              },
+              "Juzgado de Instrucción": {
+                "1": "3288", "2": "3301", "3": "3299", "4": "3300", "5": "4391"
+              },
+              "Juzgado Mercantil Sede Desplazada": {
+                "3": "5039"
+              },
+              "Juzgado de lo Penal": {
+                "1": "3290", "2": "3302", "3": "1693"
+              },
+              "Juzgado de lo Social": {
+                "1": "3294", "2": "3295", "3": "3296", "4": "2768"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "5099"
+              }
+            },
+            "Grado": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3315", "2": "3317"
+              }
+            },
+            "Infiesto": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3379"
+              }
+            },
+            "Langreo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3319", "2": "3309", "3": "3270"
+              },
+              "Juzgado de lo Penal": {
+                "1": "3405"
+              }
+            },
+            "Llanes": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3333"
+              }
+            },
+            "Luarca": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3329"
+              }
+            },
+            "Mieres": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3337", "2": "3340", "3": "1643"
+              },
+              "Juzgado de lo Social": {
+                "1": "3339"
+              }
+            },
+            "Oviedo": {
+              "Audiencia Provincial": {
+                "1": "3347", "2": "3368", "3": "3369", "4": "3370", "5": "3310", "6": "3311"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "3348", "2": "3350", "3": "3351", "4": "3352", "5": "3362", 
+                "6": "3277", "7": "0930", "8": "3271", "9": "3839", "10": "4392", "11": "4848"
               }
             }
           }
