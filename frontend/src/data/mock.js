@@ -534,7 +534,221 @@ export const mockData = {
             },
             "Berga": {
               "Juzgado de Primera Instancia e Instrucción": {
-                "1": "0712"
+                "1": "0712",
+                "2": "0714"
+              }
+            },
+            "Cerdanyola del Vallès": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0718", "2": "0719", "3": "0764", "4": "0826", "5": "0836", "6": "1011", "7": "2359", "8": "4252"
+              },
+              "Servicio Común General": {
+                "1": "5398"
+              }
+            },
+            "Cornellà de Llobregat": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0721", "2": "0722", "3": "0838", "4": "0840"
+              },
+              "Servicio Común General": {
+                "1": "5275"
+              }
+            },
+            "Esplugues de Llobregat": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0724", "2": "0725", "3": "2667"
+              }
+            },
+            "Gavà": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0726", "2": "0727", "3": "0728", "4": "0850", "5": "0851", "6": "1574", "7": "2400", "8": "3611", "9": "4871"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "4253"
+              }
+            },
+            "Granollers": {
+              "Juzgado de Primera Instancia": {
+                "1": "0729", "2": "0730", "3": "0731", "4": "0738", "5": "0737", "6": "3527", "7": "4962", "8": "5370", "9": "5372"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0732", "2": "0739", "3": "0918", "4": "1558"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1049", "2": "0917", "3": "3540"
+              },
+              "Juzgado de lo Social": {
+                "1": "0402", "2": "1487", "3": "2698"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "4076"
+              }
+            },
+            "L'Hospitalet de Llobregat": {
+              "Juzgado de Primera Instancia": {
+                "1": "0744", "2": "0753", "3": "0754", "4": "0755", "5": "0756", "6": "0757", "7": "4146", "8": "5412"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0743", "2": "0745", "3": "0746", "4": "0747", "5": "0723"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3456"
+              }
+            },
+            "Igualada": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0765", "2": "0766", "3": "0769", "4": "1831", "5": "4592"
+              },
+              "Juzgado Decano": {
+                "1": "0966"
+              }
+            },
+            "Manresa": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0772", "2": "0773", "3": "0774", "4": "0776", "5": "0777", "6": "2766", "7": "3959", "8": "5134"
+              },
+              "Juzgado Decano": {
+                "1": "8048"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0685", "2": "1701", "3": "4382"
+              },
+              "Juzgado de lo Social": {
+                "1": "0779"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "4866"
+              }
+            },
+            "Martorell": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0782", "2": "0771", "3": "0780", "4": "1027", "5": "2096", "6": "3677", "7": "4387"
+              }
+            },
+            "Mataró": {
+              "Juzgado de Primera Instancia": {
+                "1": "0784", "2": "0785", "3": "0787", "4": "0792", "5": "0742", "6": "2720", "7": "3862", "8": "4756", "9": "5387"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0786", "2": "0793", "3": "0794", "4": "0919", "5": "5135"
+              },
+              "Juzgado Decano": {
+                "1": "3427"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1115", "2": "2736"
+              },
+              "Juzgado de lo Social": {
+                "1": "0441", "2": "1483"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3843"
+              }
+            },
+            "Mollet del Vallès": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0801", "2": "0859", "3": "0860", "4": "0926", "5": "2724"
+              }
+            },
+            "El Prat de Llobregat": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0803", "2": "0804", "3": "0878", "4": "1012", "5": "2075"
+              },
+              "Servicio Común General": {
+                "1": "5265"
+              }
+            },
+            "Rubí": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0806", "2": "0807", "3": "0862", "4": "0864", "5": "1013", "6": "2773", "7": "3766", "8": "4826"
+              },
+              "Juzgado Decano": {
+                "1": "5236"
+              }
+            },
+            "Sabadell": {
+              "Juzgado de Primera Instancia": {
+                "1": "0808", "2": "0810", "3": "0812", "4": "0818", "5": "0819", "6": "0820", "7": "3569", "8": "4852"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0809", "2": "0811", "3": "0795", "4": "0934", "5": "2999"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0683", "2": "0684", "3": "1617", "4": "4874"
+              },
+              "Juzgado de lo Social": {
+                "1": "1123", "2": "1492", "3": "2767"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3819"
+              }
+            },
+            "Sant Boi de Llobregat": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0829", "2": "0830", "3": "0831", "4": "0835", "5": "3934", "6": "4967"
+              },
+              "Servicio Común General": {
+                "1": "3984"
+              }
+            },
+            "Sant Feliu de Llobregat": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0841", "2": "0842", "3": "0843", "4": "0847", "5": "0848", "6": "0824", "7": "0825"
+              },
+              "Juzgado Decano": {
+                "1": "0957"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3938"
+              }
+            },
+            "Santa Coloma de Gramenet": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0853", "2": "0854", "3": "0857", "4": "0858", "5": "0761", "6": "0762"
+              },
+              "Servicio Común General": {
+                "1": "5277"
+              }
+            },
+            "Terrassa": {
+              "Juzgado de Primera Instancia": {
+                "1": "0865", "2": "0866", "3": "0867", "4": "0821", "5": "0873", "6": "3051", "7": "4170", "8": "5079", "9": "5391"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0874", "2": "0875", "3": "1586", "4": "0868"
+              },
+              "Juzgado Decano": {
+                "1": "5249"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0680", "2": "0978", "3": "4747"
+              },
+              "Juzgado de lo Social": {
+                "1": "0350", "2": "1521"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "4164"
+              }
+            },
+            "Vic": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0885", "2": "0886", "3": "0890", "4": "0532", "5": "3536"
+              }
+            },
+            "Vilafranca del Penedès": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0894", "2": "0896", "3": "1000", "4": "3411", "5": "4987"
+              },
+              "Servicio Común General": {
+                "1": "5313"
+              }
+            },
+            "Vilanova i la Geltrú": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0901", "2": "0902", "3": "0903", "4": "0799", "5": "0800", "6": "0805", "7": "2741", "8": "3739", "9": "4988"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1030", "2": "1821", "3": "3049", "4": "5139"
               }
             }
           }
