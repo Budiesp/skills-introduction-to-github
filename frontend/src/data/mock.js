@@ -1036,7 +1036,312 @@ export const mockData = {
             },
             "Valdepeñas": {
               "Juzgado de Primera Instancia e Instrucción": {
-                "1": "1410"
+                "1": "1410", "2": "1412"
+              }
+            },
+            "Villanueva de los Infantes": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1413"
+              }
+            }
+          },
+          "Córdoba": {
+            "Aguilar de la Frontera": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1420"
+              }
+            },
+            "Baena": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1424"
+              }
+            },
+            "Cabra": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1430", "2": "1432"
+              }
+            },
+            "Córdoba": {
+              "Audiencia Provincial": {
+                "1": "1434", "2": "1435", "3": "1423"
+              },
+              "Fiscalía Diligencias Investigación Audiencia Provincial": {
+                "1": "3417"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1436", "2": "1437", "3": "1438", "4": "1439", "5": "1447", "6": "1427", "7": "1429", "8": "1433", "9": "5150", "10": "4423", "11": "5340"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "9": "5288"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1457", "2": "1463", "3": "1714", "4": "2818", "5": "4607"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1440", "2": "1441", "3": "1442", "4": "1448", "5": "1449", "6": "1450", "7": "1451", "8": "5184"
+              },
+              "Juzgado de Menores": {
+                "1": "1453"
+              },
+              "Juzgado Decano": {
+                "1": "3692"
+              },
+              "Juzgado Mercantil": {
+                "1": "2259"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1443", "2": "1454", "3": "1455", "4": "1452", "5": "4295", "6": "4994"
+              },
+              "Juzgado de lo Social": {
+                "1": "1444", "2": "1445", "3": "1446", "4": "1711"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3406"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "1111"
+              }
+            },
+            "Lucena": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1466", "2": "1468", "3": "1828"
+              }
+            },
+            "Montilla": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1470", "2": "1472"
+              }
+            },
+            "Montoro": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1474", "2": "1475"
+              }
+            },
+            "Peñarroya-Pueblonuevo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1478", "2": "1480"
+              }
+            },
+            "Posadas": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1482", "2": "1459", "3": "4955"
+              }
+            },
+            "Pozoblanco": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1486", "2": "1488"
+              }
+            },
+            "Priego de Córdoba": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1490"
+              }
+            },
+            "Puente Genil": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1494", "2": "2921"
+              }
+            }
+          },
+          "A Coruña": {
+            "Arzúa": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1510"
+              }
+            },
+            "Betanzos": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1512", "2": "1514", "3": "1511", "4": "5114"
+              }
+            },
+            "Carballo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1516", "2": "1518", "3": "3674"
+              },
+              "Juzgado Decano": {
+                "1": "8101"
+              }
+            },
+            "Corcubión": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1520", "2": "1522"
+              }
+            },
+            "A Coruña": {
+              "Audiencia Provincial": {
+                "1": "1542", "2": "1543", "3": "1524", "4": "1541", "5": "1605", "6": "1505"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1525", "2": "1526", "3": "1527", "4": "1536", "5": "1537", "6": "1519", "7": "1523", "8": "1606", "9": "1607", "10": "1641", "11": "2814", "12": "4280", "13": "5095", "14": "5421"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "7": "5285"
+              },
+              "Juzgado de Primera Instancia Refuerzo": {
+                "1": "5243"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1599", "2": "1600", "3": "1623", "4": "1624"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1528", "2": "1529", "3": "1530", "4": "1538", "5": "1539", "6": "1540", "7": "3792", "8": "5116"
+              },
+              "Juzgado de Menores": {
+                "1": "1594"
+              },
+              "Juzgado Decano": {
+                "1": "3990"
+              },
+              "Juzgado Mercantil": {
+                "1": "2225", "2": "4656"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1544", "2": "1548", "3": "1549", "4": "1035", "5": "1708", "6": "2722"
+              },
+              "Juzgado de lo Social": {
+                "1": "1531", "2": "1532", "3": "1533", "4": "1534", "5": "4757", "6": "5338"
+              },
+              "Juzgado Togado Militar Territorial": {
+                "41": "1568"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3722"
+              },
+              "Sección Menores Fiscalía Tribunal Superior Justicia": {
+                "1": "1499"
+              },
+              "Tribunal Superior de Justicia Sala Civil-Penal": {
+                "1": "1546"
+              },
+              "Tribunal Superior de Justicia Sala Contencioso-Administrativo": {
+                "1": "1570", "2": "1517", "3": "1578", "4": "3958"
+              },
+              "Tribunal Superior de Justicia Sala Social": {
+                "1": "1552"
+              },
+              "Tribunal Militar Territorial": {
+                "4": "1508"
+              }
+            },
+            "Ferrol": {
+              "Juzgado de Primera Instancia": {
+                "1": "1553", "2": "1554", "3": "1555", "4": "1559", "5": "4797", "6": "5325"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0194"
+              },
+              "Juzgado de Instrucción": {
+                "1": "1560", "2": "1561", "3": "3413"
+              },
+              "Juzgado Decano": {
+                "1": "1603"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1550", "2": "2295"
+              },
+              "Juzgado de lo Social": {
+                "1": "1564", "2": "1501"
+              }
+            },
+            "Muros": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1601"
+              }
+            },
+            "Negreira": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1563"
+              }
+            },
+            "Noia": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1565", "2": "1567"
+              }
+            },
+            "Ordes": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1569", "2": "3838"
+              }
+            },
+            "Padrón": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1575", "2": "3831"
+              }
+            },
+            "Ribeira": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1581", "2": "1582", "3": "1613"
+              }
+            },
+            "Santa Marta de Ortigueira": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1571"
+              }
+            },
+            "Santiago de Compostela": {
+              "Audiencia Provincial": {
+                "6": "1505"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "1583", "2": "1500", "3": "1590", "4": "1591", "5": "1592", "6": "4418"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0076", "2": "3445"
+              },
+              "Juzgado de Instrucción": {
+                "1": "2104", "2": "1584", "3": "2318"
+              },
+              "Juzgado Decano": {
+                "1": "1608"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1585", "2": "1593"
+              },
+              "Juzgado de lo Social": {
+                "1": "1589", "2": "1596", "3": "5076", "4": "5424"
+              }
+            }
+          },
+          "Cuenca": {
+            "Cuenca": {
+              "Audiencia Provincial": {
+                "1": "1614"
+              },
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1615", "2": "1616", "3": "1620", "4": "3974"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1622"
+              },
+              "Juzgado de Menores": {
+                "1": "1638"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1621", "2": "4424"
+              },
+              "Juzgado de lo Social": {
+                "1": "1619"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "1129"
+              },
+              "Servicio Común General": {
+                "1": "1640"
+              }
+            },
+            "Motilla del Palancar": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1627", "2": "1629"
+              }
+            },
+            "San Clemente": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1631", "2": "1633"
+              }
+            },
+            "Tarancón": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1635", "2": "1637"
               }
             }
           },
