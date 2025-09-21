@@ -5,10 +5,7 @@ import { X, CreditCard, Copy, CheckCircle, Info } from 'lucide-react';
 import { mockData } from '../data/mock';
 
 const ConsignacionCalculator = ({ isOpen, onClose }) => {
-  const [provincia, setProvincia] = useState('');
-  const [poblacion, setPoblacion] = useState('');
-  const [tipoJuzgado, setTipoJuzgado] = useState('');
-  const [numeroJuzgado, setNumeroJuzgado] = useState('');
+  const [codigoJuzgado, setCodigoJuzgado] = useState('');
   const [tipoProcedimiento, setTipoProcedimiento] = useState('');
   const [numeroAutos, setNumeroAutos] = useState('');
   const [anoAutos, setAnoAutos] = useState('');
@@ -17,148 +14,14 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
 
   const consignacionInfo = mockData.services[1].detailedInfo;
 
-  // Generar código de juzgado basado en selecciones - CÓDIGOS OFICIALES AMPLIADOS
-  const generateCodigoJuzgado = () => {
-    // Códigos oficiales según tabla de consignaciones España (ampliados)
-    const codigosOficiales = {
-      "Barcelona": {
-        "Barcelona": {
-          "Primera Instancia": {
-            "1": "0534", "2": "0535", "3": "0536", "4": "0537", "5": "0538",
-            "6": "0539", "7": "0540", "8": "0541", "9": "0542", "10": "0543",
-            "11": "0544", "12": "0545", "13": "0546", "14": "0547", "15": "0548"
-          },
-          "Instrucción": {
-            "1": "0549", "2": "0550", "3": "0551", "4": "0552", "5": "0553",
-            "6": "0554", "7": "0555", "8": "0556", "9": "0557", "10": "0558"
-          },
-          "Penal": {
-            "1": "0658", "2": "0659", "3": "0660", "4": "0661", "5": "0662",
-            "6": "0663", "7": "0664", "8": "0665", "9": "0666", "10": "0667",
-            "11": "0668", "12": "0669", "13": "0670", "14": "0671", "15": "0672",
-            "16": "0673", "17": "0674", "18": "0675", "19": "0676", "20": "0677",
-            "21": "0678", "22": "0679", "23": "0680", "24": "0681", "25": "0682",
-            "26": "0683", "27": "0684", "28": "0685", "29": "0686", "30": "0687"
-          },
-          "Social": {
-            "1": "0559", "2": "0560", "3": "0561", "4": "0562", "5": "0563",
-            "6": "0564", "7": "0565", "8": "0566", "9": "0567", "10": "0568"
-          },
-          "Mercantil": {
-            "1": "0688", "2": "0689", "3": "0690", "4": "0691", "5": "0692"
-          },
-          "Contencioso-Administrativo": {
-            "1": "0569", "2": "0570", "3": "0571", "4": "0572", "5": "0573"
-          }
-        },
-        "Hospitalet": {
-          "Primera Instancia": {
-            "1": "0701", "2": "0702", "3": "0703", "4": "0704", "5": "0705"
-          },
-          "Instrucción": {
-            "1": "0706", "2": "0707", "3": "0708", "4": "0709", "5": "0710"
-          }
-        },
-        "Cornellá del Llobregat": {
-          "Primera Instancia": {
-            "1": "0711", "2": "0712", "3": "0713", "4": "0714", "5": "0715"
-          }
-        },
-        "Sant Feliu de Llobregat": {
-          "Primera Instancia": {
-            "1": "0716", "2": "0717", "3": "0718", "4": "0719", "5": "0720"
-          }
-        },
-        "Esplugues del Llobregat": {
-          "Primera Instancia": {
-            "1": "0721", "2": "0722", "3": "0723", "4": "0724", "5": "0725"
-          }
-        }
-      },
-      "Madrid": {
-        "Madrid": {
-          "Primera Instancia": {
-            "1": "2801", "2": "2802", "3": "2803", "4": "2804", "5": "2805",
-            "6": "2806", "7": "2807", "8": "2808", "9": "2809", "10": "2810",
-            "11": "2811", "12": "2812", "13": "2813", "14": "2814", "15": "2815",
-            "16": "2816", "17": "2817", "18": "2818", "19": "2819", "20": "2820"
-          },
-          "Instrucción": {
-            "1": "2821", "2": "2822", "3": "2823", "4": "2824", "5": "2825",
-            "6": "2826", "7": "2827", "8": "2828", "9": "2829", "10": "2830"
-          },
-          "Penal": {
-            "1": "2851", "2": "2852", "3": "2853", "4": "2854", "5": "2855",
-            "6": "2856", "7": "2857", "8": "2858", "9": "2859", "10": "2860",
-            "11": "2861", "12": "2862", "13": "2863", "14": "2864", "15": "2865",
-            "16": "2866", "17": "2867", "18": "2868", "19": "2869", "20": "2870",
-            "21": "2871", "22": "2872", "23": "2873", "24": "2874", "25": "2875",
-            "26": "2876", "27": "2877", "28": "2878", "29": "2879", "30": "2880"
-          },
-          "Social": {
-            "1": "2831", "2": "2832", "3": "2833", "4": "2834", "5": "2835",
-            "6": "2836", "7": "2837", "8": "2838", "9": "2839", "10": "2840"
-          },
-          "Mercantil": {
-            "1": "2881", "2": "2882", "3": "2883", "4": "2884", "5": "2885"
-          },
-          "Contencioso-Administrativo": {
-            "1": "2841", "2": "2842", "3": "2843", "4": "2844", "5": "2845"
-          }
-        }
-      },
-      "Valencia": {
-        "Valencia": {
-          "Primera Instancia": {
-            "1": "4601", "2": "4602", "3": "4603", "4": "4604", "5": "4605"
-          },
-          "Penal": {
-            "1": "4651", "2": "4652", "3": "4653", "4": "4654", "5": "4655"
-          }
-        }
-      },
-      "Sevilla": {
-        "Sevilla": {
-          "Primera Instancia": {
-            "1": "4101", "2": "4102", "3": "4103", "4": "4104", "5": "4105"
-          },
-          "Penal": {
-            "1": "4151", "2": "4152", "3": "4153", "4": "4154", "5": "4155"
-          }
-        }
-      },
-      "Málaga": {
-        "Málaga": {
-          "Primera Instancia": {
-            "1": "2901", "2": "2902", "3": "2903", "4": "2904", "5": "2905"
-          },
-          "Penal": {
-            "1": "2951", "2": "2952", "3": "2953", "4": "2954", "5": "2955"
-          }
-        }
-      }
-    };
-    
-    const provinciaData = codigosOficiales[provincia];
-    if (!provinciaData) return "0000";
-    
-    const poblacionData = provinciaData[poblacion];
-    if (!poblacionData) return "0000";
-    
-    const tipoJuzgadoData = poblacionData[tipoJuzgado];
-    if (!tipoJuzgadoData) return "0000";
-    
-    return tipoJuzgadoData[numeroJuzgado] || "0000";
-  };
-
   const calculateCuentaConsignacion = () => {
-    if (!provincia || !poblacion || !tipoJuzgado || !numeroJuzgado || !tipoProcedimiento || !numeroAutos || !anoAutos) {
+    if (!codigoJuzgado || !tipoProcedimiento || !numeroAutos || !anoAutos) {
       alert('Por favor, complete todos los campos obligatorios');
       return;
     }
 
-    // Generar código de juzgado automáticamente
-    const codigoJuzgado = generateCodigoJuzgado();
+    // Formatear código de juzgado (4 dígitos)
+    const codigoFormateado = codigoJuzgado.padStart(4, '0');
     
     // Ceros fijos
     const cerosFijos = '0000';
@@ -171,28 +34,20 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
     const anoFormateado = anoAutos.slice(-2); // últimas 2 cifras del año
     
     // Construir número de cuenta
-    const numeroCuenta = `${codigoJuzgado}.${cerosFijos}.${codigoProcedimiento}.${numeroFormateado}.${anoFormateado}`;
+    const numeroCuenta = `${codigoFormateado}.${cerosFijos}.${codigoProcedimiento}.${numeroFormateado}.${anoFormateado}`;
     
     const procedimientoSeleccionado = consignacionInfo.codigosProcedimientos.find(
       p => p.codigo === tipoProcedimiento
     );
 
-    const tipoJuzgadoSeleccionado = consignacionInfo.tiposJuzgado.find(
-      t => t.tipo === tipoJuzgado
-    );
-
     setResult({
       numeroCuenta,
-      codigoJuzgado,
+      codigoJuzgado: codigoFormateado,
       cerosFijos,
       codigoProcedimiento,
       numeroAutos: numeroFormateado,
       ano: anoFormateado,
       tipoProcedimientoNombre: procedimientoSeleccionado?.nombre || '',
-      provincia,
-      poblacion,
-      tipoJuzgado: tipoJuzgadoSeleccionado?.tipo || '',
-      numeroJuzgado,
       cuentaBancaria: consignacionInfo.cuentaBancaria
     });
   };
