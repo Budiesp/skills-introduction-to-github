@@ -3,6 +3,7 @@ import { Calculator, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
 import { mockData } from '../data/mock';
 import TasasCalculator from './TasasCalculator';
+import ConsignacionCalculator from './ConsignacionCalculator';
 
 const iconMap = {
   Calculator: Calculator,
@@ -12,10 +13,13 @@ const iconMap = {
 const Services = () => {
   const { services } = mockData;
   const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
+  const [isConsignacionOpen, setIsConsignacionOpen] = useState(false);
 
   const handleServiceClick = (service) => {
     if (service.title === 'Cálculo de tasas') {
       setIsCalculatorOpen(true);
+    } else if (service.title === 'Número de cuentas de consignación') {
+      setIsConsignacionOpen(true);
     }
   };
 
@@ -48,14 +52,12 @@ const Services = () => {
                   <p className="text-slate-600 leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  {service.title === 'Cálculo de tasas' && (
-                    <Button 
-                      onClick={() => handleServiceClick(service)}
-                      className="bg-slate-800 hover:bg-slate-900 text-white"
-                    >
-                      Abrir calculadora
-                    </Button>
-                  )}
+                  <Button 
+                    onClick={() => handleServiceClick(service)}
+                    className="bg-slate-800 hover:bg-slate-900 text-white"
+                  >
+                    {service.title === 'Cálculo de tasas' ? 'Abrir calculadora' : 'Calcular cuenta'}
+                  </Button>
                 </div>
               );
             })}
@@ -66,6 +68,11 @@ const Services = () => {
       <TasasCalculator 
         isOpen={isCalculatorOpen} 
         onClose={() => setIsCalculatorOpen(false)} 
+      />
+      
+      <ConsignacionCalculator 
+        isOpen={isConsignacionOpen} 
+        onClose={() => setIsConsignacionOpen(false)} 
       />
     </>
   );
