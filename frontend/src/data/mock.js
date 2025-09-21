@@ -845,6 +845,201 @@ export const mockData = {
               }
             }
           },
+          "Cantabria": {
+            "Castro-Urdiales": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3896", "2": "1662", "3": "4770"
+              }
+            },
+            "Laredo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3842", "2": "3844"
+              },
+              "Juzgado Decano": {
+                "1": "3994"
+              }
+            },
+            "Reinosa": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3852"
+              }
+            },
+            "San Vicente de la Barquera": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3883"
+              }
+            },
+            "Santander": {
+              "Audiencia Provincial": {
+                "1": "3856", "2": "3871", "3": "3882", "4": "3907"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "3857", "2": "3858", "3": "3859", "4": "3860", "5": "3861", "6": "3869", "7": "3899", "8": "3900", "9": "2107", "10": "5072", "11": "3727"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "2": "5312"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "3851", "2": "3904", "3": "3903"
+              },
+              "Juzgado de Instrucción": {
+                "1": "3870", "2": "3877", "3": "3847", "4": "3849", "5": "4279"
+              },
+              "Juzgado de Menores": {
+                "1": "3895"
+              },
+              "Juzgado Decano": {
+                "1": "3891"
+              },
+              "Juzgado Mercantil": {
+                "1": "2258"
+              },
+              "Juzgado de lo Penal": {
+                "1": "3893", "2": "3894", "3": "3886", "4": "2761", "5": "4991"
+              },
+              "Juzgado de lo Penal BIS": {
+                "2": "3717"
+              },
+              "Juzgado de lo Social": {
+                "1": "3867", "2": "3868", "3": "3876", "4": "3855", "5": "2778", "6": "5071"
+              },
+              "Juzgado de Vigilancia Penitenciaria": {
+                "1": "5200"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3455"
+              },
+              "Sección Menores Fiscalía Tribunal Superior Justicia": {
+                "1": "0020"
+              },
+              "Tribunal Superior de Justicia Sala Civil-Penal": {
+                "1": "3873"
+              },
+              "Tribunal Superior de Justicia Sala Contencioso-Administrativo": {
+                "1": "3875"
+              },
+              "Tribunal Superior de Justicia Sala Social": {
+                "1": "3874"
+              }
+            },
+            "Santoña": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3879", "2": "3897"
+              }
+            },
+            "Solares": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3846", "2": "3878"
+              }
+            },
+            "Torrelavega": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "3887", "2": "3888", "3": "3889", "4": "3890", "5": "3908", "6": "2729", "7": "5256"
+              }
+            }
+          },
+          "Ceuta": {
+            "Ceuta": {
+              "Audiencia Provincial": {
+                "6": "1307"
+              },
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1308", "2": "1309", "3": "1313", "4": "1271", "5": "2250", "6": "2907"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1277", "2": "4388"
+              },
+              "Juzgado de Menores": {
+                "1": "1314"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1315", "2": "1296"
+              },
+              "Juzgado de lo Social": {
+                "1": "1312"
+              },
+              "Juzgado Togado Militar Territorial": {
+                "25": "1347"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "0935"
+              },
+              "Servicio Común General": {
+                "1": "5245"
+              }
+            }
+          },
+          "Ciudad Real": {
+            "Alcázar de San Juan": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1360", "2": "1362", "3": "4596"
+              }
+            },
+            "Almadén": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1364"
+              }
+            },
+            "Almagro": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1366"
+              }
+            },
+            "Ciudad Real": {
+              "Audiencia Provincial": {
+                "1": "1376", "2": "1373"
+              },
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1377", "2": "1378", "3": "1383", "4": "1385", "5": "1825", "6": "2860", "7": "5145"
+              },
+              "Juzgado de Primera Instancia e Instrucción BIS": {
+                "4": "5307"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "1363", "2": "5138"
+              },
+              "Juzgado de Menores": {
+                "1": "1367"
+              },
+              "Juzgado de lo Penal": {
+                "1": "1415", "2": "1416", "3": "1403"
+              },
+              "Juzgado de lo Social": {
+                "1": "1381", "2": "1382", "3": "1405"
+              },
+              "Sección Menores Fiscalía Audiencia Provincial": {
+                "1": "2072"
+              },
+              "Servicio Común General": {
+                "1": "5165"
+              }
+            },
+            "Daimiel": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1386", "2": "4282"
+              }
+            },
+            "Manzanares": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1392", "2": "1394"
+              }
+            },
+            "Puertollano": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1398", "2": "1399", "3": "1400"
+              }
+            },
+            "Tomelloso": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1408", "2": "1409", "3": "3145"
+              }
+            },
+            "Valdepeñas": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "1410"
+              }
+            }
+          },
           "Cataluña": {
             "Arenys de Mar": {
               "Juzgado de lo Penal": {
