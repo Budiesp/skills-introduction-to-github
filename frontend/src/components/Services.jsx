@@ -1,11 +1,10 @@
 import React from 'react';
-import { Scale, FileText, Calculator } from 'lucide-react';
+import { Calculator, CreditCard } from 'lucide-react';
 import { mockData } from '../data/mock';
 
 const iconMap = {
-  Scale: Scale,
-  FileText: FileText,
   Calculator: Calculator,
+  CreditCard: CreditCard,
 };
 
 const Services = () => {
