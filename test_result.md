@@ -141,7 +141,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Court codes integration - consignas 8.txt"
+    - "Court codes integration - consignas 9.txt"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
