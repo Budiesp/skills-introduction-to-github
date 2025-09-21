@@ -65,7 +65,38 @@ export const mockData = {
       id: 2,
       title: "Número de cuentas de consignación",
       description: "Cálculo del número de cuenta del Juzgado personalizado para cada procedimiento judicial.",
-      icon: "CreditCard"
+      icon: "CreditCard",
+      detailedInfo: {
+        title: "Cálculo del Número de Cuenta de Consignación",
+        description: "El número de cuenta para consignaciones judiciales en España tiene una estructura fija de 16 dígitos que identifica de manera única cada procedimiento judicial.",
+        estructura: [
+          { parte: "Código del Juzgado", digitos: 4, descripcion: "Código específico del órgano judicial", ejemplo: "0534" },
+          { parte: "Ceros fijos", digitos: 4, descripcion: "Siempre son cuatro ceros", ejemplo: "0000" },
+          { parte: "Código del Procedimiento", digitos: 2, descripcion: "Código del tipo de procedimiento", ejemplo: "04" },
+          { parte: "Número y Año", digitos: 6, descripcion: "Número de autos + año (últimas 2 cifras)", ejemplo: "023213" }
+        ],
+        ejemplo: {
+          completo: "0534.0000.04.0232.13",
+          descripcion: "Procedimiento Ordinario en el Juzgado de Primera Instancia 1 de Barcelona con número de autos 232/13"
+        },
+        codigosProcedimientos: [
+          { codigo: "01", nombre: "Monitorio" },
+          { codigo: "02", nombre: "Verbal" },
+          { codigo: "03", nombre: "Cambiario" },
+          { codigo: "04", nombre: "Ordinario" },
+          { codigo: "05", nombre: "Ejecución de títulos no judiciales" },
+          { codigo: "06", nombre: "Oposición a ejecución" },
+          { codigo: "07", nombre: "Segunda instancia" },
+          { codigo: "08", nombre: "Concursal" },
+          { codigo: "09", nombre: "Familia" },
+          { codigo: "10", nombre: "Penal" }
+        ],
+        cuentaBancaria: {
+          iban: "ES55 0049 3569 9200 0500 1274",
+          banco: "Banco Santander",
+          nota: "Esta es la cuenta corriente general para todas las consignaciones judiciales en España"
+        }
+      }
     }
   ],
 
