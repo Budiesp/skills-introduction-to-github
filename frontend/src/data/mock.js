@@ -104,16 +104,16 @@ export const mockData = {
           { tipo: "Mercantil", codigo: "11" }
         ],
         codigosProcedimientos: [
-          { codigo: "01", nombre: "Monitorio" },
+          { codigo: "08", nombre: "Monitorio" },
           { codigo: "02", nombre: "Verbal" },
           { codigo: "03", nombre: "Cambiario" },
           { codigo: "04", nombre: "Ordinario" },
           { codigo: "05", nombre: "Ejecución de títulos no judiciales" },
           { codigo: "06", nombre: "Oposición a ejecución" },
           { codigo: "07", nombre: "Segunda instancia" },
-          { codigo: "08", nombre: "Concursal" },
-          { codigo: "09", nombre: "Familia" },
-          { codigo: "10", nombre: "Penal" }
+          { codigo: "09", nombre: "Concursal" },
+          { codigo: "10", nombre: "Familia" },
+          { codigo: "11", nombre: "Penal" }
         ],
         cuentaBancaria: {
           iban: "ES55 0049 3569 9200 0500 1274",
