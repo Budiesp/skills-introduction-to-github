@@ -5,7 +5,10 @@ import { X, CreditCard, Copy, CheckCircle, Info } from 'lucide-react';
 import { mockData } from '../data/mock';
 
 const ConsignacionCalculator = ({ isOpen, onClose }) => {
-  const [codigoJuzgado, setCodigoJuzgado] = useState('');
+  const [comunidad, setComunidad] = useState('');
+  const [poblacion, setPoblacion] = useState('');
+  const [tipoJuzgado, setTipoJuzgado] = useState('');
+  const [numeroJuzgado, setNumeroJuzgado] = useState('');
   const [tipoProcedimiento, setTipoProcedimiento] = useState('');
   const [numeroAutos, setNumeroAutos] = useState('');
   const [anoAutos, setAnoAutos] = useState('');
@@ -14,14 +17,60 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
 
   const consignacionInfo = mockData.services[1].detailedInfo;
 
+  // Obtener código automáticamente basado en selecciones
+  const getCodigoJuzgado = () => {
+    const codigosJuzgados = consignacionInfo.codigosJuzgados;
+    
+    if (!comunidad || !poblacion || !tipoJuzgado || !numeroJuzgado) {
+      return "0000";
+    }
+
+    const comunidadData = codigosJuzgados[comunidad];
+    if (!comunidadData) return "0000";
+
+    const poblacionData = comunidadData[poblacion];
+    if (!poblacionData) return "0000";
+
+    const tipoJuzgadoData = poblacionData[tipoJuzgado];
+    if (!tipoJuzgadoData) return "0000";
+
+    return tipoJuzgadoData[numeroJuzgado] || "0000";
+  };
+
+  // Obtener poblaciones disponibles para la comunidad seleccionada
+  const getPoblacionesDisponibles = () => {
+    if (!comunidad) return [];
+    const comunidadData = consignacionInfo.codigosJuzgados[comunidad];
+    return comunidadData ? Object.keys(comunidadData) : [];
+  };
+
+  // Obtener tipos de juzgado disponibles para la población seleccionada
+  const getTiposJuzgadoDisponibles = () => {
+    if (!comunidad || !poblacion) return [];
+    const poblacionData = consignacionInfo.codigosJuzgados[comunidad]?.[poblacion];
+    return poblacionData ? Object.keys(poblacionData) : [];
+  };
+
+  // Obtener números de juzgado disponibles para el tipo seleccionado
+  const getNumerosJuzgadoDisponibles = () => {
+    if (!comunidad || !poblacion || !tipoJuzgado) return [];
+    const tipoJuzgadoData = consignacionInfo.codigosJuzgados[comunidad]?.[poblacion]?.[tipoJuzgado];
+    return tipoJuzgadoData ? Object.keys(tipoJuzgadoData).sort((a, b) => parseInt(a) - parseInt(b)) : [];
+  };
+
   const calculateCuentaConsignacion = () => {
-    if (!codigoJuzgado || !tipoProcedimiento || !numeroAutos || !anoAutos) {
+    if (!comunidad || !poblacion || !tipoJuzgado || !numeroJuzgado || !tipoProcedimiento || !numeroAutos || !anoAutos) {
       alert('Por favor, complete todos los campos obligatorios');
       return;
     }
 
-    // Formatear código de juzgado (4 dígitos)
-    const codigoFormateado = codigoJuzgado.padStart(4, '0');
+    // Obtener código de juzgado automáticamente
+    const codigoJuzgado = getCodigoJuzgado();
+    
+    if (codigoJuzgado === "0000") {
+      alert('No se encontró el código para la selección realizada');
+      return;
+    }
     
     // Ceros fijos
     const cerosFijos = '0000';
@@ -34,7 +83,7 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
     const anoFormateado = anoAutos.slice(-2); // últimas 2 cifras del año
     
     // Construir número de cuenta
-    const numeroCuenta = `${codigoFormateado}.${cerosFijos}.${codigoProcedimiento}.${numeroFormateado}.${anoFormateado}`;
+    const numeroCuenta = `${codigoJuzgado}.${cerosFijos}.${codigoProcedimiento}.${numeroFormateado}.${anoFormateado}`;
     
     const procedimientoSeleccionado = consignacionInfo.codigosProcedimientos.find(
       p => p.codigo === tipoProcedimiento
@@ -42,12 +91,16 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
 
     setResult({
       numeroCuenta,
-      codigoJuzgado: codigoFormateado,
+      codigoJuzgado,
       cerosFijos,
       codigoProcedimiento,
       numeroAutos: numeroFormateado,
       ano: anoFormateado,
       tipoProcedimientoNombre: procedimientoSeleccionado?.nombre || '',
+      comunidad,
+      poblacion,
+      tipoJuzgado,
+      numeroJuzgado,
       cuentaBancaria: consignacionInfo.cuentaBancaria
     });
   };
