@@ -190,6 +190,13 @@ const TasasCalculator = ({ isOpen, onClose }) => {
             {result && (
               <Card className="p-6 bg-green-50 border-green-200">
                 <h4 className="font-semibold text-slate-900 mb-4">Resultado del cálculo</h4>
+                {result.exentaEstatal && (
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
+                    <p className="text-sm text-blue-800">
+                      <strong>Exenta de tasa estatal:</strong> La empresa factura menos de 1.000.000 € anuales
+                    </p>
+                  </div>
+                )}
                 <div className="grid md:grid-cols-3 gap-4 text-center">
                   <div>
                     <div className="text-sm text-slate-600">Tasa Estatal</div>
