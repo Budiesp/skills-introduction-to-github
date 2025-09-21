@@ -79,13 +79,12 @@ export const mockData = {
           completo: "0679.0000.04.0232.13",
           descripcion: "Procedimiento Ordinario en el Juzgado de lo Penal 22 de Barcelona con número de autos 232/13"
         },
-        // Códigos de juzgados organizados por comunidad → población → tipo → número - DATOS REALES OFICIALES
+        // Códigos de juzgados organizados por comunidad → población → tipo → número - DATOS REALES OFICIALES COMPLETOS
         codigosJuzgados: {
           "País Vasco": {
             "Amurrio": {
               "Juzgado de Primera Instancia e Instrucción": {
-                "1": "0001",
-                "2": "0003"
+                "1": "0001", "2": "0003"
               },
               "Servicio Común General": {
                 "1": "5259"
@@ -93,8 +92,7 @@ export const mockData = {
             },
             "Vitoria-Gasteiz": {
               "Audiencia Provincial": {
-                "1": "0008",
-                "2": "0071"
+                "1": "0008", "2": "0071"
               },
               "Juzgado de Primera Instancia": {
                 "1": "0009", "2": "0010", "3": "0011", "4": "0012", 
@@ -117,28 +115,166 @@ export const mockData = {
               },
               "Juzgado de Violencia sobre la Mujer": {
                 "1": "2495"
-              },
-              "Sección Menores Fiscalía Audiencia Provincial": {
-                "1": "0434"
-              },
-              "Servicio Común General": {
-                "1": "0079"
               }
             }
           },
-          "Cataluña": {
-            "Barcelona": {
+          "Castilla-La Mancha": {
+            "Albacete": {
+              "Audiencia Provincial": {
+                "1": "0031", "2": "0042"
+              },
+              "Tribunal Superior de Justicia Sala Civil-Penal": {
+                "1": "0043"
+              },
+              "Tribunal Superior de Justicia Sala Contencioso-Administrativo": {
+                "1": "0045", "2": "0067"
+              },
+              "Tribunal Superior de Justicia Sala Social": {
+                "1": "0044"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "0032", "2": "0033", "3": "0041", "4": "0040", 
+                "5": "0884", "6": "3220", "7": "5045", "8": "5343"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "3": "5300"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0073", "2": "1042"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0034", "2": "0053", "3": "0057"
+              },
+              "Juzgado de Menores": {
+                "1": "0049"
+              },
               "Juzgado de lo Penal": {
-                "2": "0576", "3": "0577", "19": "0676", "20": "0677", 
-                "22": "0679", "23": "0955", "25": "4604", "26": "4786", 
-                "27": "4685", "28": "5074"
+                "1": "0046", "2": "0047", "3": "3992"
+              },
+              "Juzgado de lo Social": {
+                "1": "0038", "2": "0039", "3": "0048"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3516"
+              }
+            },
+            "Alcaraz": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0050"
+              }
+            },
+            "Almansa": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0054", "2": "0056"
+              }
+            },
+            "Casas Ibáñez": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0058"
+              }
+            },
+            "Hellín": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0060", "2": "0062", "3": "4862"
+              }
+            },
+            "La Roda": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0064"
+              }
+            },
+            "Villarrobledo": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0068", "2": "2919"
               }
             }
           },
-          "Madrid": {
-            "Madrid": {
+          "Comunidad Valenciana": {
+            "Alcoy": {
+              "Juzgado de Primera Instancia e Instrucción": {
+                "1": "0087", "2": "0088", "3": "0091", "4": "2725"
+              }
+            },
+            "Alicante": {
+              "Audiencia Provincial": {
+                "1": "0094", "2": "0095", "3": "0096", "4": "0188", 
+                "5": "0190", "6": "0264", "7": "0317", "8": "2276", 
+                "9": "3575", "10": "5038"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "0097", "2": "0098", "3": "0099", "4": "0100", 
+                "5": "0118", "6": "0102", "7": "0213", "8": "0214", 
+                "9": "0219", "10": "0705", "11": "2175", "12": "3793", "13": "5373"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "5": "5295"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0271", "2": "0127", "3": "0313", "4": "4611"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0108", "2": "0105", "3": "0119", "4": "0120", 
+                "5": "0121", "6": "0216", "7": "0217", "8": "1752", "9": "0314"
+              },
+              "Juzgado de Menores": {
+                "1": "1048", "2": "0334", "3": "2685"
+              },
+              "Juzgado Mercantil": {
+                "1": "2275", "2": "2732"
+              },
               "Juzgado de lo Penal": {
-                "22": "2872"
+                "1": "0110", "2": "0201", "3": "0202", "4": "0203", 
+                "5": "0204", "6": "0205", "7": "0260", "8": "4679", "9": "5353"
+              },
+              "Juzgado de lo Social": {
+                "1": "0111", "2": "0112", "3": "0113", "4": "0114", 
+                "5": "0115", "6": "0116", "7": "0122"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "2679", "2": "3429"
+              }
+            },
+            "Benidorm": {
+              "Juzgado de Primera Instancia": {
+                "1": "0132", "2": "0138", "3": "0149", "4": "0703", "5": "5344"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0133", "2": "0134", "3": "0139", "4": "0147"
+              },
+              "Juzgado de lo Penal": {
+                "1": "0309", "2": "0852", "3": "4143"
+              },
+              "Juzgado de lo Social": {
+                "1": "0308"
+              },
+              "Juzgado de Violencia sobre la Mujer": {
+                "1": "3730"
+              }
+            }
+          },
+          "Andalucía": {
+            "Almería": {
+              "Audiencia Provincial": {
+                "1": "0222", "2": "0254", "3": "0711"
+              },
+              "Juzgado de Primera Instancia": {
+                "1": "0223", "2": "0224", "3": "0233", "4": "0235", 
+                "5": "0241", "6": "0400", "7": "5096", "8": "4963", "9": "5363"
+              },
+              "Juzgado de Primera Instancia BIS": {
+                "7": "5286"
+              },
+              "Juzgado Contencioso Administrativo": {
+                "1": "0277", "2": "0279", "3": "4435", "4": "5354"
+              },
+              "Juzgado de Instrucción": {
+                "1": "0225", "2": "0226", "3": "0234", "4": "0247", "5": "2101", "6": "2393"
+              },
+              "Juzgado de Menores": {
+                "1": "0239"
+              },
+              "Juzgado Mercantil": {
+                "1": "2231"
               }
             }
           }
