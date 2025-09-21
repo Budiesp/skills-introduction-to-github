@@ -26,21 +26,15 @@ export const mockData = {
   services: [
     {
       id: 1,
-      title: "Representación procesal",
-      description: "Gestión completa de procedimientos judiciales con seguimiento personalizado.",
-      icon: "Scale"
-    },
-    {
-      id: 2,
-      title: "Notificaciones judiciales",
-      description: "Recepción y gestión eficaz de todas las comunicaciones judiciales.",
-      icon: "FileText"
-    },
-    {
-      id: 3,
       title: "Cálculo de tasas",
       description: "Cálculo preciso de tasas judiciales estatales y autonómicas actualizadas.",
       icon: "Calculator"
+    },
+    {
+      id: 2,
+      title: "Número de cuentas de consignación",
+      description: "Cálculo del número de cuenta del Juzgado personalizado para cada procedimiento.",
+      icon: "CreditCard"
     }
   ],
 
