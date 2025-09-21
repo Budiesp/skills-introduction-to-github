@@ -17,7 +17,7 @@ export const mockData = {
   },
   
   hero: {
-    title: "Atención integral y personalizada para letrados",
+    title: "Atención integral y personalizada para letrados y clientes",
     subtitle: "Despacho de procuradores en Barcelona y Madrid",
     description: "Tecnología avanzada y trato cercano para optimizar la gestión de sus asuntos judiciales.",
     ctaText: "Solicitar información"
