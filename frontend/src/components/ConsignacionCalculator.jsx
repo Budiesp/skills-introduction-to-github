@@ -178,17 +178,89 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Código del Juzgado *
+                  Comunidad Autónoma *
                 </label>
-                <input
-                  type="text"
-                  value={codigoJuzgado}
-                  onChange={(e) => setCodigoJuzgado(e.target.value)}
-                  placeholder="Ej: 0679"
-                  maxLength="4"
+                <select 
+                  value={comunidad}
+                  onChange={(e) => {
+                    setComunidad(e.target.value);
+                    setPoblacion('');
+                    setTipoJuzgado('');
+                    setNumeroJuzgado('');
+                  }}
                   className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
-                />
-                <div className="text-xs text-slate-500 mt-1">Código de 4 dígitos del juzgado</div>
+                >
+                  <option value="">Seleccionar comunidad</option>
+                  {Object.keys(consignacionInfo.codigosJuzgados).map((com) => (
+                    <option key={com} value={com}>
+                      {com}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Población *
+                </label>
+                <select 
+                  value={poblacion}
+                  onChange={(e) => {
+                    setPoblacion(e.target.value);
+                    setTipoJuzgado('');
+                    setNumeroJuzgado('');
+                  }}
+                  disabled={!comunidad}
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 disabled:bg-slate-100"
+                >
+                  <option value="">Seleccionar población</option>
+                  {getPoblacionesDisponibles().map((pob) => (
+                    <option key={pob} value={pob}>
+                      {pob}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Tipo de Juzgado *
+                </label>
+                <select 
+                  value={tipoJuzgado}
+                  onChange={(e) => {
+                    setTipoJuzgado(e.target.value);
+                    setNumeroJuzgado('');
+                  }}
+                  disabled={!poblacion}
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 disabled:bg-slate-100"
+                >
+                  <option value="">Seleccionar tipo</option>
+                  {getTiposJuzgadoDisponibles().map((tipo) => (
+                    <option key={tipo} value={tipo}>
+                      {tipo}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Número de Juzgado *
+                </label>
+                <select 
+                  value={numeroJuzgado}
+                  onChange={(e) => setNumeroJuzgado(e.target.value)}
+                  disabled={!tipoJuzgado}
+                  className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 disabled:bg-slate-100"
+                >
+                  <option value="">Seleccionar número</option>
+                  {getNumerosJuzgadoDisponibles().map((num) => (
+                    <option key={num} value={num}>
+                      {num}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div>
