@@ -8,6 +8,7 @@ const TasasCalculator = ({ isOpen, onClose }) => {
   const [selectedProcedure, setSelectedProcedure] = useState('');
   const [cuantia, setCuantia] = useState('');
   const [isPersonaJuridica, setIsPersonaJuridica] = useState(false);
+  const [facturacionAnual, setFacturacionAnual] = useState('');
   const [result, setResult] = useState(null);
 
   const tasasInfo = mockData.services[0].detailedInfo;
@@ -20,15 +21,24 @@ const TasasCalculator = ({ isOpen, onClose }) => {
       let estatales = '0 €';
       let autonomicas = procedure.autonomica;
       
-      if (isPersonaJuridica && parseFloat(cuantia.replace(/[^\d]/g, '')) > 2000) {
-        estatales = procedure.estatal;
+      // Lógica actualizada: Solo pagan tasa estatal las personas jurídicas que:
+      // 1. Facturen MÁS de 1.000.000 € anuales
+      // 2. El procedimiento supere 2.000 €
+      if (isPersonaJuridica) {
+        const facturacion = parseFloat(facturacionAnual.replace(/[^\d]/g, '')) || 0;
+        const cuantiaNum = parseFloat(cuantia.replace(/[^\d]/g, '')) || 0;
+        
+        if (facturacion > 1000000 && cuantiaNum > 2000) {
+          estatales = procedure.estatal;
+        }
       }
       
       setResult({
         procedimiento: selectedProcedure,
         estatales,
         autonomicas,
-        total: `${parseFloat(estatales.replace(/[^\d,]/g, '').replace(',', '.')) + parseFloat(autonomicas.replace(/[^\d,]/g, '').replace(',', '.'))} €`
+        total: `${parseFloat(estatales.replace(/[^\d,]/g, '').replace(',', '.')) + parseFloat(autonomicas.replace(/[^\d,]/g, '').replace(',', '.'))} €`,
+        exentaEstatal: isPersonaJuridica && parseFloat(facturacionAnual.replace(/[^\d]/g, '')) <= 1000000
       });
     }
   };
@@ -37,6 +47,7 @@ const TasasCalculator = ({ isOpen, onClose }) => {
     setSelectedProcedure('');
     setCuantia('');
     setIsPersonaJuridica(false);
+    setFacturacionAnual('');
     setResult(null);
   };
 
