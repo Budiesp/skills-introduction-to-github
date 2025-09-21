@@ -75,7 +75,11 @@ const TasasCalculator = ({ isOpen, onClose }) => {
                 {tasasInfo.estatales.title}
               </h3>
               <p className="text-slate-600 mb-3">{tasasInfo.estatales.description}</p>
-              <p className="text-sm text-slate-500 italic">{tasasInfo.estatales.note}</p>
+              <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-3">
+                <p className="text-sm text-red-800 font-medium">{tasasInfo.estatales.important}</p>
+              </div>
+              <p className="text-sm text-slate-500 italic mb-2">{tasasInfo.estatales.note}</p>
+              <p className="text-xs text-slate-400">{tasasInfo.estatales.reference}</p>
             </Card>
 
             <Card className="p-6">
