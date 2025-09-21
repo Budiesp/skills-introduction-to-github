@@ -239,8 +239,7 @@ const ConsignacionCalculator = ({ isOpen, onClose }) => {
                 </div>
 
                 <div className="text-sm text-slate-600 mb-4">
-                  <strong>Procedimiento:</strong> {result.tipoProcedimientoNombre}<br/>
-                  <strong>Código de Juzgado:</strong> {result.codigoJuzgado}
+                  <strong>Procedimiento:</strong> {result.tipoProcedimientoNombre}
                 </div>
 
                 {/* Información bancaria */}
